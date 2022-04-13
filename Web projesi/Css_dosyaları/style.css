@@ -1,0 +1,44 @@
+.navbar {
+  height: 8vh;
+  width: 100%;
+  background-color: darkcyan;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 12px;
+  margin-top: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  transition: 1s;
+  color: bisque;
+  font-family: inherit;
+  font-size: 25px;
+  font-style: oblique;
+}
+.navbar a:hover,
+a:focus {
+  color: brown;
+}
+.tablo img {
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 25px;
+  margin-left: 230px;
+}
+.tablo .yazı {
+  margin-left: 450px;
+  margin-top: -150px;
+  margin-right: 50px;
+  text-align: center;
+  width: 700px;
+}
+.tablo h2 {
+  background-color: bisque;
+  font-style: oblique;
+  font-size: 30px;
+}
+body {
+}
