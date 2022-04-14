@@ -1,0 +1,64 @@
+.navbar {
+  height: 8vh;
+  width: 100%;
+  background-color: darkcyan;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  margin-top: -1%;
+}
+
+.navbar a {
+  text-decoration: none;
+  transition: 1s;
+  color: bisque;
+  font-family: inherit;
+  font-size: 150%;
+  font-style: oblique;
+}
+.navbar a:hover,
+a:focus {
+  color: brown;
+}
+.fotograf img {
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 3%;
+  margin-left: 2%;
+}
+h2 {
+  color: black;
+  background-color: bisque;
+  font-style: oblique;
+  font-size: 150%;
+}
+.paragraf1 {
+  color: white;
+  font-size: 115%;
+  margin-top: -13%;
+  margin-left: 25%;
+  text-align: center;
+  width: 800px;
+}
+.paragraf2 {
+  font-size: 115%;
+}
+.paragraf2 img {
+  height: 85px;
+  margin-left: 50px;
+}
+body {
+  background-image: url(../Resimler/turuncu.jpeg);
+}
+footer {
+  font-size: 22px;
+  color: bisque;
+  background-color: darkcyan;
+  text-align: center;
+}
+.fa-brands {
+  font-size: 30px;
+  margin-left: 20px;
+  color: black;
+}
