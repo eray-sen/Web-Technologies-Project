@@ -1,58 +1,94 @@
-.navbar {
-  height: 8vh;
-  width: 100%;
-  background-color: darkcyan;
-  align-items: center;
-  flex-direction: row;
-  display: flex;
-  justify-content: space-around;
-  margin-top: -1%;
-}
-
-.navbar a {
-  text-decoration: none;
-  transition: 1s;
-  color: bisque;
-  font-family: inherit;
-  font-size: 150%;
-  font-style: oblique;
-}
-.navbar a:hover,
-a:focus {
-  color: brown;
-}
-.fotograf img {
+.fotograf1 img {
   height: 150px;
   border-radius: 50%;
   margin-top: 3%;
   margin-left: 2%;
 }
+.fotograf2 img {
+  height: 150px;
+  margin-left: 2%;
+  margin-bottom: -16%;
+  width: 15%;
+}
+.fotograf3 img {
+  height: 150px;
+  margin-left: 85%;
+  margin-bottom: -13%;
+  width: 15%;
+}
+.fotograf4 img {
+  height: 200px;
+  margin-left: 35%;
+  margin-bottom: -48%;
+  width: 150px;
+}
+.fotograf5 img {
+  height: 200px;
+  margin-left: 55%;
+  margin-bottom: -45%;
+  width: 150px;
+}
+.fotograf6 img {
+  height: 260px;
+  margin-left: 55%;
+  margin-bottom: -83%;
+  width: 200;
+}
+.fotograf7 img {
+  height: 260px;
+  margin-left: 30%;
+  margin-bottom: -80%;
+  width: 250px;
+}
+/* .beyaz {
+  background-color: white;
+} */
+
 h2 {
   color: black;
-  background-color: bisque;
   font-style: oblique;
-  font-size: 150%;
+  font-size: 170%;
 }
-.paragraf1 {
-  color: white;
-  font-size: 115%;
-  margin-top: -13%;
+h3 {
+  font-style: oblique;
+  font-size: 140%;
+  color: darkred;
+  margin-left: -85%;
+}
+.paragraf1,
+.paragraf2,
+.paragraf3,
+.paragraf4 {
+  color: black;
+  font-size: 20px;
   margin-left: 25%;
   text-align: center;
   width: 800px;
 }
+.paragraf1 {
+  margin-top: -10%;
+}
 .paragraf2 {
-  font-size: 115%;
+  margin-top: 6%;
+}
+.paragraf3 {
+  margin-top: -10%;
+}
+.paragraf4 {
+  margin-top: 22%;
 }
 .paragraf2 img {
   height: 85px;
   margin-left: 50px;
+  border-radius: 50%;
 }
 body {
-  background-image: url(../Resimler/turuncu.jpeg);
+  background-color: bisque;
+  /* background-image: url(../Resimler/turuncu.jpeg); */
 }
 footer {
   font-size: 22px;
+  margin-top: 30%;
   color: bisque;
   background-color: darkcyan;
   text-align: center;

@@ -1,0 +1,57 @@
+* {
+  list-style: none;
+  padding: 0;
+  border: 0;
+}
+a {
+  text-decoration: none;
+}
+ul.navbar {
+  background-color: darkcyan;
+  height: 90px;
+  width: 102%;
+  margin-top: -1%;
+  margin-left: -1%;
+}
+ul.navbar > li {
+  margin-top: 2%;
+  margin-left: 5%;
+  float: left;
+  height: 80px;
+  position: relative; /* alt menülerin doğru seçeneğin altında çıkmasını sağlar. */
+}
+ul.navbar > li > a {
+  display: block;
+  font-size: 25px;
+  padding: 0 15px;
+  color: bisque;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  transition: 0.7s;
+  font-family: inherit;
+  font-style: oblique;
+}
+ul.navbar a:hover,
+ul.navbar a:focus {
+  color: brown;
+}
+ul.navbar ul {
+  background-color: rgb(7, 174, 174);
+  width: 200px;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  opacity: 0; /*alt menü ilk başta gözükmeyecek*/
+  transition: 0.3s;
+  visibility: hidden; /* sadece ana menünün üstüne gelince drop menü açılır*/
+}
+ul.navbar ul li a {
+  display: block;
+  color: bisque;
+  padding: 7px 12px;
+}
+ul.navbar > li:hover ul,
+ul.navbar > li:focus ul {
+  opacity: 1;
+  visibility: visible;
+  top: 50px;
+}

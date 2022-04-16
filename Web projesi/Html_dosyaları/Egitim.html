@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../Css_dosyaları/Egitim.css" />
+    <link rel="stylesheet" href="../Css_dosyaları/navbar.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -12,15 +13,40 @@
     <title>Eğitim Bilgieri</title>
   </head>
   <body>
-    <aside class="navbar">
-      <a href="Hakkimda.html"> <i class="fas fa-user"> </i> Hakkımda </a>
-      <a href="Egitim.html">
-        <i class="fa-solid fa-graduation-cap"></i> Eğitim Bilgilerim</a
-      >
-      <a href="Sehrim.html"> <i class="fa-solid fa-city"> </i> Şehrim </a>
-      <a href="#"> Mirasımız</a>
-      <a href="#"> İlgi Alanlarım</a>
-    </aside>
+    <ul class="navbar">
+      <li>
+        <a href="Hakkimda.html"> <i class="fas fa-user"> </i> Hakkımda </a>
+      </li>
+      <li>
+        <a href="Egitim.html">
+          <i class="fa-solid fa-graduation-cap"></i> Eğitim Bilgilerim
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-city"> </i> Şehrim
+          <i class="fa-solid fa-caret-down"></i>
+        </a>
+        <ul>
+          <li>
+            <a href="../Html_dosyaları/Şehrim_html/Bilgiler.html"> Bilgiler </a>
+          </li>
+          <li>
+            <a href="#"> Gezilecek Yerler </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#"> Mirasımız</a>
+      </li>
+      <li>
+        <a href="#"> İlgi Alanlarım</a>
+      </li>
+      <li>
+        <a href="#"> İletişim</a>
+      </li>
+    </ul>
+
     <div class="paragraf1">
       <article>
         <header>
@@ -51,8 +77,6 @@
           </p>
 
           <div class="tablo">
-            <br />
-            <br />
             <table>
               <thead>
                 <tr>
@@ -116,5 +140,11 @@
         </section>
       </article>
     </div>
+    <footer>
+      <ins
+        >Okulların resmi sitesini ziyaret etmek için isimlerinin üstüne
+        tıklayabilirsiniz.</ins
+      >
+    </footer>
   </body>
 </html>
