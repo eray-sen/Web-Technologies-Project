@@ -1,100 +1,161 @@
-.fotograf1 img {
-  height: 150px;
+#ben img {
+  width: 10%;
   border-radius: 50%;
-  margin-top: 3%;
-  margin-left: 2%;
+  margin-top: 8%;
+  margin-left: 3%;
 }
-.fotograf2 img {
-  height: 150px;
-  margin-left: 2%;
-  margin-bottom: -16%;
-  width: 15%;
+#kedi img {
+  margin-left: 8%;
+  width: 180px;
+  height: 250px;
 }
-.fotograf3 img {
-  height: 150px;
-  margin-left: 85%;
-  margin-bottom: -13%;
-  width: 15%;
+.img-1,
+.img-2 {
+  width: 400px;
+  height: 250px;
 }
-.fotograf4 img {
-  height: 200px;
-  margin-left: 35%;
-  margin-bottom: -48%;
-  width: 150px;
+ul.navbar {
+  /* padding-left: 50px; */
 }
-.fotograf5 img {
-  height: 200px;
-  margin-left: 55%;
-  margin-bottom: -45%;
-  width: 150px;
-}
-.fotograf6 img {
-  height: 260px;
-  margin-left: 55%;
-  margin-bottom: -83%;
-  width: 200;
-}
-.fotograf7 img {
-  height: 260px;
-  margin-left: 30%;
-  margin-bottom: -80%;
-  width: 250px;
-}
-/* .beyaz {
-  background-color: white;
-} */
 
+.cerceve {
+  width: 400px;
+  height: 250px;
+  overflow: hidden;
+  border: 2px solid gray;
+  position: relative;
+  margin-left: 30%;
+}
+.cerceve img {
+  width: 50%;
+  float: left;
+}
+.img-1 {
+  left: 0px;
+}
+.img-2 {
+  left: 400px;
+}
+.cerceve > .galeri {
+  position: absolute;
+  left: 0px;
+  width: 800px;
+  height: 250px;
+  animation-duration: 8s;
+  animation-name: sliders;
+  animation-iteration-count: infinite;
+}
+.galeri:hover {
+  animation-play-state: paused;
+}
+@keyframes sliders {
+  0% {
+    left: 0px;
+  }
+  40% {
+    left: 0px;
+  }
+  45% {
+    left: -400px;
+  }
+  85% {
+    left: -400px;
+  }
+}
 h2 {
+  font-family: Ubuntu;
   color: black;
   font-style: oblique;
   font-size: 170%;
 }
 h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-style: oblique;
   font-size: 140%;
   color: darkred;
-  margin-left: -85%;
+  margin-left: -80%;
 }
-.paragraf1,
-.paragraf2,
-.paragraf3,
-.paragraf4 {
+p {
+  font-family: Raleway;
+}
+.paragraf {
   color: black;
-  font-size: 20px;
-  margin-left: 25%;
+  font-size: 18px;
+  margin-left: 15%;
   text-align: center;
-  width: 800px;
+  width: 70%;
+  background-color: bisque;
 }
-.paragraf1 {
-  margin-top: -10%;
+.paragraf {
+  margin-top: -15%;
 }
-.paragraf2 {
-  margin-top: 6%;
-}
-.paragraf3 {
-  margin-top: -10%;
-}
-.paragraf4 {
-  margin-top: 22%;
-}
-.paragraf2 img {
-  height: 85px;
-  margin-left: 50px;
+#logo a img {
+  width: 10%;
+  margin-left: 5%;
   border-radius: 50%;
 }
+
 body {
-  background-color: bisque;
-  /* background-image: url(../Resimler/turuncu.jpeg); */
+  background-color: whitesmoke;
 }
 footer {
-  font-size: 22px;
-  margin-top: 30%;
+  font-size: 16px;
   color: bisque;
   background-color: darkcyan;
   text-align: center;
 }
 .fa-brands {
-  font-size: 30px;
-  margin-left: 20px;
-  color: black;
+  font-size: 20px;
+}
+@media screen and (max-width: 800px) {
+  #kedi img {
+    margin-left: 8%;
+    width: 126px;
+    height: 175px;
+  }
+
+  .cerceve {
+    width: 240px;
+    height: 150px;
+    overflow: hidden;
+    border: 2px solid gray;
+    position: relative;
+    margin-left: 20%;
+  }
+  .cerceve img {
+    width: 50%;
+    float: left;
+  }
+  .img-1 {
+    left: 0px;
+  }
+  .img-2 {
+    left: 240px;
+  }
+  .cerceve > .galeri {
+    position: absolute;
+    left: 0px;
+    width: 480px;
+    height: 150px;
+    animation-duration: 8s;
+    animation-name: sliders;
+    animation-iteration-count: infinite;
+  }
+  .galeri:hover {
+    animation-play-state: paused;
+  }
+  @keyframes sliders {
+    0% {
+      left: 0px;
+    }
+    40% {
+      left: 0px;
+    }
+    45% {
+      left: -240px;
+    }
+    85% {
+      left: -240px;
+    }
+  }
 }

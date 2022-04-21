@@ -1,0 +1,66 @@
+.cerceve {
+  width: 500px;
+  height: 250px;
+  overflow: hidden;
+  border: 2px solid black;
+  position: relative;
+}
+.cerceve img {
+  width: 25%;
+  float: left;
+}
+img {
+  width: 500px;
+  height: 250px;
+}
+.img-1 {
+  left: 0px;
+}
+.img-2 {
+  left: 500px;
+}
+.img-3 {
+  left: 1000px;
+}
+.img-4 {
+  left: 1500px;
+}
+.cerceve > .galeri {
+  position: absolute;
+  left: 0px;
+  width: 2000px;
+  height: 250px;
+  animation-duration: 16s;
+  animation-name: sliders;
+  animation-iteration-count: infinite;
+}
+.galeri:hover,
+.galeri:checked {
+  animation-play-state: paused;
+}
+@keyframes sliders {
+  0% {
+    left: 0px;
+  }
+  20% {
+    left: 0px;
+  }
+  25% {
+    left: -500px;
+  }
+  45% {
+    left: -500px;
+  }
+  50% {
+    left: -1000px;
+  }
+  55% {
+    left: -1000px;
+  }
+  75% {
+    left: -1500px;
+  }
+  80% {
+    left: -1500px;
+  }
+}

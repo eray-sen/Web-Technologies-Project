@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../Css_dosyaları/Bilgiler.css" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../Css_dosyaları/Şehrim_css/Bilgiler.css" />
     <link rel="stylesheet" href="../../Css_dosyaları/navbar.css" />
     <link
       rel="stylesheet"
@@ -35,7 +36,20 @@
             <a href="Bilgiler.html"> Bilgiler </a>
           </li>
           <li>
-            <a href="#"> Gezilecek Yerler </a>
+            <a href="#">
+              Gezilecek Yerler <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <ul>
+              <li>
+                <a href="Müzeler.html">Müzeler</a>
+              </li>
+              <li>
+                <a href="Turistik.html">Turistik Yerler</a>
+              </li>
+              <li>
+                <a href="Doğal.html">Doğal Güzellikler</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </li>
@@ -51,97 +65,393 @@
     </ul>
     <br />
     <br />
-    <h1><b> SAMSUN</b></h1>
-    <p id="bölüm"></p>
-    <h2 id="baslik1">Genel Bilgiler</h2>
-    <div class="tablo1">
-      <table>
-        <tr>
-          <th>Bölge</th>
-          <td>Orta Karadeniz</td>
-        </tr>
-        <tr>
-          <th>Nüfus</th>
-          <td>1.500.000</td>
-        </tr>
-        <tr>
-          <th>Belediye Başkanı</th>
-          <td>Mustafa Demir</td>
-        </tr>
-        <tr>
-          <th>Rakım</th>
-          <td>4 metre</td>
-        </tr>
-      </table>
+    <div class="container">
+      <h1><b> SAMSUN</b></h1>
+      <p id="bölüm"></p>
+      <nav class="menu">
+        <a href="#tarihçe"> Tarihçe</a>
+        <a href="#coğrafik">Coğrafik Özellikler</a>
+        <a href="#su_kaynakları">Su Kaynakları</a>
+        <a href="#iklim">İklim </a>
+        <a href="#tarım">Tarımk</a>
+        <a href="#enerji">Enerji</a>
+        <a href="#eğitim">Eğitim</a>
+        <a href="#sağlık">Sağlık</a>
+      </nav>
+      <h2 id="baslik1">Genel Bilgiler</h2>
+      <div class="tablo1">
+        <table>
+          <tr>
+            <th>Bölge</th>
+            <td>Orta Karadeniz</td>
+          </tr>
+          <tr>
+            <th>Nüfus</th>
+            <td>1.500.000</td>
+          </tr>
+          <tr>
+            <th>Belediye Başkanı</th>
+            <td>Mustafa Demir</td>
+          </tr>
+          <tr>
+            <th>Rakım</th>
+            <td>4 metre</td>
+          </tr>
+        </table>
+      </div>
+      <div class="tablo2">
+        <table>
+          <tr>
+            <th>Yüz ölçümü</th>
+            <td>9732 km <sup>2</sup></td>
+          </tr>
+          <tr>
+            <th>Plaka Kodu</th>
+            <td>55</td>
+          </tr>
+          <tr>
+            <th>Telefon kodu</th>
+            <td>362</td>
+          </tr>
+          <tr>
+            <th>İlçe sayısı</th>
+            <td>17</td>
+          </tr>
+        </table>
+      </div>
+
+      <p id="giriş">
+        Karadeniz Bölgesi'nin yaklaşık 1.5 milyon kişilik toplam nüfusuyla en
+        kalabalık şehri olan Samsun; eğitim, sağlık, sanayi, ticaret, ulaşım ve
+        ekonomi açısından en gelişmiş Karadeniz şehridir. Aynı zamanda 1993'ten
+        beri Karadeniz'in tek Büyükşehir Belediyesi'ne sahip ili olan Samsun,
+        Türkiye'nin de en gelişmiş şehirleri arasındadır. <br />
+        <br />
+        Alaçam, 19 Mayıs, Asarcık, Atakum, Ayvacık, Bafra, Canik, Çarşamba,
+        Havza, Ladik, İlkadım, Kavak, Salıpazarı, Tekkeköy, Terme, Vezirköprü ve
+        Yakakent Samsun'un ilçeleridir. <br />
+        <br />İl ayrıca Mustafa Kemal Atatürk'ün 19 Mayıs 1919'da Milli
+        Mücadele’yi başlatmak üzere ilk adımı attığı yer olarak tarihimizde de
+        çok önemli bir yere sahiptir.
+        <br />
+      </p>
+      <figure>
+        <img
+          id="harita"
+          src="../../Resimler/samsun2.jpeg"
+          title="Samsun'un siyasi haritası"
+        />
+      </figure>
+      <p id="bölüm"></p>
+      <h2 id="tarihçe">Tarihçe</h2>
+      <p>
+        Samsun'un tarihi de oldukça eskilere dayanmaktadır. Tarihi kaynaklarda
+        geçen bilgilere göre şehrin ilk ismi Amisos olarak geçmektedir. Antik
+        Yunan kaynaklarına göre Amazon adı verilen bir halkın da bu bölgede
+        yaşadığı belirtilmiştir. Amazonların hangi tarihte Samsun'a
+        yerleştikleri bilinmemekle beraber, sadece kadınlardan oluştuğu ve savaş
+        sanatını çok iyi bildikleri ifade edilmiştir. Öte yandan bölgeye ilk
+        olarak Gaska medeniyetinin yerleştiği belirlenmiştir. Daha sonra kent
+        Hitit, Frigya, Pers, Makedonya, Pontus, Roma, Bizans, Selçuklu ve
+        Osmanlı gibi birçok milletin egemenliği altına girdi.<br />
+        Türklerin kente gelmesi Selçuklular zamanında gerçekleşmiştir. Sultan
+        II. Kılıçarslan döneminde şehir fethedilmiştir. Bundan sonra arap
+        kaynaklarında bölgenin adı Samsun, batı kaynaklarında ise Sampson olarak
+        geçmiştir. Osmanlı Devleti zamanında yaşanan savaşlar ve siyasi olaylar
+        neticesinde kent büyük bir gelişme gösterememiştir.<br />
+        Bunun yanında tütün ekiminin yaygınlaşması ve buharlı gemi işletiminin
+        Karadenizde'de artmaya başlaması Samsun'un gelişmesinde önemli etkenler
+        olmuşlardır. Şehrin nüfusu buna bağlı olarak zamanla artmıştır. Birinci
+        dünya savaşı yıllarında ise ticareti felce uğrayan Samsun çok sıkıntı
+        çekmiştir. Türkiye Cumhuriyet tarihinde şehir büyük önem kazanarak bir
+        ticaret merkezi haline gelmiştir. Ayrıca milli mücadelenin temelleri de
+        Mustafa Kemal Atatürk önderliğinde bu kentte atıldığı için büyük öneme
+        sahiptir.
+      </p>
+      <a
+        id="link"
+        href="https://tr.wikipedia.org/wiki/Samsun_tarihi#:~:text=Samsun%20tarihi%2C%20tarih%20%C3%B6ncesi%20d%C3%B6nemde,3500%20aras%C4%B1nda%20buraya%20gelen%20Ka%C5%9Fkalard%C4%B1r."
+        target="_blank"
+      >
+        <ins>Daha detaylı tarihçe için tıklayınız</ins></a
+      >
+      <p id="bölüm"></p>
+      <h2 id="coğrafik">Coğrafik Özellikleri</h2>
+      <p>
+        Samsun, Orta Karadeniz'de merkezî bir noktada yer almaktadır. İl
+        toprakları 37° 08’ ve 34° 30’ doğu boylamları ile 40° 05’ ve 41° 45’
+        kuzey enlemleri arasında kalır. Doğudan Ordu, güneyden Tokat, Amasya ve
+        Çorum; batıdan Sinop illeriyle çevriliyken kuzeyinde ise Karadeniz
+        bulunur.
+        <br />
+        Karadeniz'e doğru akarak iki büyük delta oluşturan Kızılırmak ve
+        Yeşilırmak nedeniyle Samsun kıyıları geniş bir koy niteliğini almış olup
+        Samsun coğrafyasının %45'ini dağlar, %37'sini platolar, %18'ini ise
+        ovalar meydana getirmektedir.
+      </p>
+
+      <h3 id="su_kaynakları">Su Kaynakları</h3>
+      <h4>-Akarsular</h4>
+      <p>
+        Samsun'da önemli derecede su varlığı taşıyan Terme Çayı, Mert Irmağı,
+        Kürtün Çayı, Miliç Irmağı, Tersakan Çayı, Karaboğaz Deresi, Akçay,
+        Uluçay, Esenli, İncesu, Hızırilyas ve Ballıca dereleri bulunmakla
+        birlikte
+        <b>Yeşilırmak </b> ve <b>Kızılırmak</b> ilin asıl su zenginliğini
+        oluşturmaktadır Sivas sınırları içerisinde Kösedağ'ın eteklerinde doğan
+        Yeşilırmak,Çarşamba'nın ortasından geçip Civa Burnu'ndan Karadeniz'e
+        dökülür.Sivas sınırları içerisinde doğan bir diğer ırmak olan Kızılırmak
+        Bafra'nın batısından kollara ayrılarak Samsun'a girer ve ilçenin
+        içerisinden geçerek Bafra Burnu'ndan Karadeniz'e dökülür. Yeşilırmak'ın
+        oluşturduğu Yeşilırmak Deltası, Kızılırmak'ın oluşturduğu Kızılırmak
+        Deltası ve Terme, Bafra ve Vezirköprü ovalarıyla birlikte zengin delta
+        alanlarına sahip olan Samsun bu nedenle
+        <mark>"Karadeniz'in Mezopotamyası"</mark> olarak anılmaktadır.
+      </p>
+      <h4 id="barajlar">-Barajlar</h4>
+      <p>Samsun 8 barajı ile Türkiye'nin en çok barajına sahip ilidir.</p>
+      <ul id="barajlar">
+        <li>Altınkaya Barajı ve HES*</li>
+        <li>Hasan Uğurlu Barajı ve HES</li>
+        <li>Suat Uğurlu Barajı ve HES</li>
+        <li>Derbent Barajı ve HES</li>
+        <li>Çakmak Barajı</li>
+        <li>Vezirköprü Barajı</li>
+        <li>Demirözü Barajı</li>
+        <li>On Dokuz Mayıs Barajı</li>
+        <p>HES: Hidroelektrik santral</p>
+      </ul>
+
+      <p>
+        Altınkaya, Derbent, Hasan Uğurlu ve Suat Uğurlu barajları şehrin enerji
+        ihtiyacının büyük kısmı bu barajlardaki hidroelektrik santralleri
+        tarafından karşılanmaktadır.
+
+        <br />
+        <br />
+        Samsun'un en büyük barajı olan Altınkaya Barajı ve HES, Bafra ilçesinde
+        Kızılırmak üzerinde kurulmuş olan baraj ve hidroelektrik santralidir. Bu
+        barajın göl alanı 74,5 km²'dir. Su toplama hacmi 5 milyar 673 milyon
+        m³'tür. Elektrik enerjisi üretimi için ve taşkın önleme maksadıyla
+        yapılmış olan barajın yapımı 1988'de tamamlandı. Altınkaya Barajı'nın
+        suları dört üniteyi beslemektedir. Dört üniteden meydana gelen
+        hidroelektrik santralinden yılda 1 milyar 632 milyon KWh enerji
+        üretilmektedir.
+      </p>
+      <figure id="baraj">
+        <img src="../../Resimler/Altınkaya.jpeg" title="Altınkaya Barajı" />
+        <img src="../../Resimler/Altınkaya.jpg" title="Altınkaya Barajı" />
+      </figure>
+      <h4>-Göller</h4>
+      <p>
+        Samsun göller bakımından da zengin bir şehirdir. Ladik, Balık, Simenit,
+        Kargalı, Ak ve Silindir gölleri şehrin önde gelen bazı gölleridir.
+      </p>
+      <h3>Dağ - Ova - Yayla ve Platolar</h3>
+      <p>
+        Samsun İli genelde pek yüksek olmayan yayla, ova, plato ve dağlardan
+        oluşan topografik yapı göstermektedir. İlde, Canik, Çangal Akdağ,
+        Kunduz, Bunyan, Sırçalı ve Yurt Dağları; Bafra, Çarşamba ve Samsun
+        Ovaları; On Dokuz Mayıs, Kezen ve Atatürk Platoları ile Aktaş, Küpecik,
+        Çakırgümüş, Büyükkızıoğlu ve Gürcü Yaylaları yer almaktadır.
+      </p>
+      <h3 id="iklim">İklim ve Bitki Örtüsü</h3>
+      <h4>İklim</h4>
+      <p>
+        Samsun'un iklimi, sahil ve iç kesimlerde değişiklik gösterir. Sahil
+        şeridi Karadeniz'in etkisinde nemli ve kışları serin olmasına karşın iç
+        kesimler Akdağ ve Canik Dağları etkisi altında karasal iklime sahiptir.
+        En düşük sıcaklık ortalaması 5,9°C, en yüksek sıcaklık ortalaması ise
+        23°C dir.
+      </p>
+      <figure>
+        <img
+          id="iklim"
+          src="../../Resimler/iklim.jpeg"
+          title="iklim özellikleri"
+        />
+      </figure>
+      <h4>Bitki Örtüsü</h4>
+      <p>
+        Bitki örtüsü açısından zengin bir yapıya sahip olan Samsun, çoğunlukla
+        dağlık ve ormanlık bir yapıya sahip olması nedeniyle ilin bitki
+        örtüsünün önemli bir kısmı ağaçlardan oluşmaktadır. Ovalık yerlerde
+        orman örtüsü yok denecek kadar az olmasına karşın Alaçam, Ayvacık,
+        Çarşamba, Kavak, Vezirköprü ve Samsun Kent Ormanı'nı barındıran 19 Mayıs
+        önemli bir orman kesimine sahiptir.
+      </p>
+      <p id="bölüm"></p>
+      <h2 id="ekonomi">Ekonomi</h2>
+      <p>
+        Samsun'daki ekonomik hayat geçmişten bu yana avcılık, balıkçılık,
+        hayvancılık, ticaret ve sanayi eksenin gelişmiş; son yıllarda ise bu iş
+        kollarına sanayi ve enerji sektörleri de eklenmiştir. <br />
+        <br />
+        Karadeniz’in önemli ticaret limanlarından biri olan şehir, başta Rusya
+        ve Ukrayna olmak üzere bölgedeki tüm ülkelerle direkt ticaret
+        yapmaktadır. İhracatı yapılan başlıca ürünler; narenciye domates, üzüm,
+        buğday unu gibi gıda mamülleri ile, minibüs, elektrik malzemesi gibi
+        sanayi ürünleridir.
+        <br />
+        <br />
+        Samsun limanı ve gümrüğü şehrin yurtdışıyla bağlantı noktalarını
+        oluşturmakta ve döviz girdisi sağlamaktadır. Dünyanın büyük petrol
+        yataklarına komşu ve büyük doğalgaz rezervlerinin aktarım güzergahı olan
+        şehirde linyit kömürü, kaplıca suyu ve maden suyu gibi yeraltı
+        zenginlikleri vardır.
+      </p>
+      <h3 id="sanayi">Sanayi</h3>
+      <p>
+        İl genelinde ikisi Tekkeköy, diğerleri ise Bafra, Çarşamba, Havza ve
+        Kavak sınırları içerisinde olmakla beraber altı organize sanayi bölgesi
+        bulunmaktadır. Sanayi kuruluşlarının dışında şehirde 1995 yılında
+        faaliyete başlayan bir de serbest ticaret bölgesi yer almaktadır. <br />
+        <br />
+        Samsun sanayi sektörü ağırlıklı olarak imalat sanayinden oluşmaktadır.
+        İmalat sanayinin yoğunlaştığı alt sektörler; tıbbi aletler ve ürünler,
+        tekstil, mobilya başta olmak üzere, ana metaller, bakır, makine, tütün,
+        kağıt ve kağıt ürünleri, kimya sanayi ve oto yedek parça sanayi olarak
+        sıralanmaktadır. <br />
+        <br />
+        <a
+          href="http://www.samsunosb.org.tr/"
+          title="Samsun Merkez Organize Sanayi Bölge Müdürlüğü"
+          target="_blank"
+          ><ins
+            >Samsun'un sanayisi hakkında daha fazla bilgi için tıklayınız.</ins
+          >
+        </a>
+      </p>
+      <h3 id="tarım">Tarım ve Hayvancılık</h3>
+
+      <h4>Tarım</h4>
+      <p>
+        Samsun’un yüzölçümünün % 47’si tarım alanlarından oluşmaktadır. Bölgede
+        yetişen başlıca tarım ürünleri; tahıllar, baklagiller, endüstriyel
+        bitkiler, yağlı tohumlar ve yumru bitkilerdir. Ayrıca buğday, mısır,
+        çeltik ve tütün de yetiştirilmektedir. Son dönemlerde artan yatırımlarla
+        birlikte Samsun organik tarımda uzmanlaşan bir şehir haline gelmiştir.
+        Özellikle organik karpuz ve ekolojik yumurta gibi ürünler Samsun’dan
+        yurtiçi ve yurtdışına gönderilmektedir.
+      </p>
+      <h4>Hayvancılık</h4>
+      <p>
+        Hayvancılık, tarım ile birlikte Samsun'un önemli ekonomik
+        faaliyetlerinden biri olup ildeki en önemli hayvancılık kolları büyükbaş
+        ve küçükbaş ile kümes hayvancılığı olmakla birlikte arıcılık, ipek
+        böcekçiliği de görülmektedir. 400 bini aşkın büyükbaşın bulunduğu ilde
+        2.5 milyondan fazla kümes hayvanı bulunmaktadır.
+      </p>
+      <h3 id="enerji">Enerji</h3>
+      <p>
+        Son yıllarda yapılan yatırımlarla birlikte enerji kaynaklarının
+        Türkiye'ye giriş kapılarından biri durumuna gelen Samsun zengin enerji
+        kaynaklarına yakınlığı ve uluslararası ticari ilişkileriyle çok yönlü
+        bir merkez görünümdedir. Samsun, 2003'te açılan
+        <b><i>"Mavi Akım"</i></b> ile birlikte Rusya doğalgazının Türkiye'ye
+        giriş ve dağıtım noktası olmuş olup Çin, Güney Afrika gibi ülkelerden
+        ithal edilen kömürler de ülkemize Samsun'dan gitmektedir. <br />
+        <br />Günümüzde yaygın olarak kullanılan doğalgaz ve sıvılaştırılmış
+        petrol gazı ile çalışan cihazlarda yapılan ufak değişikliklerle
+        değerlendirilebilen biyogaz üretimi Samsun'da ciddi potansiyel
+        taşımaktadır Organik atıkların anında kullanılarak yüksek enerji
+        değerine sahip bir yakıt olarak değerlendirilmesini mümkün kılan biyogaz
+        bu mânâda tezekten daha avantajlı olmakla birlikte biyogaz üretiminden
+        arta kalan ürünlerin gübre olarak kullanılması mümkün olduğundan bu
+        alanda da bir avantaj sağlamaktadır. <br />
+        <br />
+        <figure>
+          <img
+            id="mavi_akım"
+            src="../../Resimler/mavi.jpeg"
+            title="Mavi Akım Boru Güzergahı"
+          />
+        </figure>
+      </p>
+      <p id="bölüm"></p>
+      <h2 id="eğitim">Eğitim</h2>
+      <p>
+        2018 yılı itibarıyla 6 üzeri yaş grubunda 1.2 milyon kişinin okuryazar
+        olduğu Samsun, Türkiye’nin en fazla okuryazar sayısına sahip 11. ilidir.
+        Okullaşma oranı %96 olup okul öncesi eğitimde okullaşma oranı Türkiye
+        ortalamasının üzerindedir. İl genelinde Millî Eğitim Bakanlığına bağlı
+        anaokulu, ilköğretim ve ortaöğretim seviyesinde 1000’i aşkın eğitim
+        kurumu bulunmakta olup bu okullarda toplam 350 binden fazla öğrenci
+        bulunmaktadır. <br />
+        <br />
+        Yükseköğretim seviyesinde eğitim veren Ondokuz Mayıs
+        Üniversitesi(OMÜ-1975) ve Samsun Üniversitesi(SAMÜ-2018) olmak üzere iki
+        kurum bulunmaktadır. Bu üniversitelerdeki toplam öğrenci sayısı 65 bin
+        iken öğretim üyesi sayısı ise 3000’den fazladır. <br />
+        <br />
+        Ondokuz Mayıs Üniversitesi, toplam 13 fakülte, 1 konservatuar, 3
+        yüksekokul, 2 yıllık eğitim-öğretim veren 9 Meslek Yüksekokulu ve 5
+        enstitü ile eğitim-öğretim faaliyetlerini sürdürmektedir.
+        <br />
+        <br />
+
+        <a href="https://oidb.omu.edu.tr/" target="_blank">
+          <img
+            id="okul"
+            src="../../Resimler/omü.png"
+            title="19 Mayıs Üniversitesi Resmi Sitesi"
+          />
+        </a>
+        <a href="https://samsun.edu.tr/" target="_blank">
+          <img
+            id="okul"
+            src="../../Resimler/samü.png"
+            title="Samsun Üniversitesi Resmi Sitesi"
+          />
+        </a>
+        <br />
+        <br />
+        Üniversitelerin dışında 4 Ocak 1982’de eğitim-öğretime başlayan ve 2001
+        yılında önlisans seviyesinde eğitim vermeye başlayan 19 Mayıs Polis
+        Meslek Yüksekokulunu barındıran Samsun’da 2018 yılına dek yaklaşık 25
+        bin polis memuru bu okuldan mezun olmuştur. <br />
+        <br />Okulların yanı sıra Kültür ve Turizm Bakanlığına bağlı 15 halk
+        kütüphanesinin bulunduğu Samsun’daki bu kütüphanelerden Gazi İl Halk
+        Kütüphanesi 58.160 kitap ile en fazla kitaba sahip kütüphane olmakla
+        beraber İlkadım Atatürk İlçe Halk Kütüphanesi 96.703 ziyaretçi ile en
+        fazla istifade edilen kütüphane durumundadır(2017). <br />
+        <br />
+        Şehir sakinlerinin devletin sunduğu eğitim hizmetlerinden memnuniyet
+        oranı %81 olup yaşam endeksinde aldığı 0,6332 puan ile Samsun’da sunulan
+        eğitim hizmetleri Türkiye genelinde 22. sırada bulunmaktadır.
+      </p>
+      <p id="bölüm"></p>
+      <h2 id="sağlık">Sağlık</h2>
+      <p>
+        Türkiye’de Hastane sayısı içinde Kamu Hastaneleri oranı %76, Samsun
+        ilinde ise % 86 dır. Karadeniz Bölgesinde Özel Hastanelerin oranı
+        Türkiye genelinden oldukça düşük ve % 4, Samsun ilinde ise % 14 dır.
+        Yatak sayılarına bakıldığında hem Türkiye hem de Samsun ilinde kamu
+        hastanelerinde yatak sayısının yüksek orana sahip olduğu görülmektedir.
+        <br />
+        <br />
+        Sağlık Bakanlığına bağlı 11 Devlet Hastanesi, 1 Eğitim ve Araştırma
+        Hastanesi, 4 Dal Hastanesi, 1 Ağız ve Diş Sağlığı Merkezi, 125 Sağlık
+        Ocağı ve 118 Sağlık evi mevcuttur.Tüm bu birimlerde 6121 çalışan
+        mevcuttur. İlde 6 tane de özel hastane bulunmaktadır.
+      </p>
+      <br />
+      <figure>
+        <img
+          id="hastane"
+          src="../../Resimler/hastane.jpeg"
+          title="Samsun Eğitim ve Araştırma Hastanesi"
+        />
+      </figure>
+      <br />
+      <p>
+        Ondokuz Mayıs Üniversitesi Tıp alanında Karadeniz Bölgesi'nin en iyi
+        sağlık, uygulama ve araştırma hastanesine sahiptir. Bu alanda Türkiye
+        çapında ilk 7 üniversiteden birisi olarak gösterilmektedir. Mayıs
+        2008'de açılan Ondokuz Mayıs Üniversitesi Çocuk Hastanesi, Türkiye'de
+        Hacettepe Üniversitesi Çocuk Hastanesi'nden sonra büyüklük bakımından 2.
+        sırada yer almaktadır.
+      </p>
     </div>
-    <div class="tablo2">
-      <table>
-        <tr>
-          <th>Yüz ölçümü</th>
-          <td>1055 km <sup>2</sup></td>
-        </tr>
-        <tr>
-          <th>Plaka Kodu</th>
-          <td>55</td>
-        </tr>
-        <tr>
-          <th>Telefon kodu</th>
-          <td>362</td>
-        </tr>
-        <tr>
-          <th>İlçe sayısı</th>
-          <td>17</td>
-        </tr>
-      </table>
-    </div>
-    <p id="giriş">
-      Karadeniz Bölgesi'nin yaklaşık 1.5 milyon kişilik toplam nüfusuyla en
-      kalabalık şehri olan Samsun; eğitim, sağlık, sanayi, ticaret, ulaşım ve
-      ekonomi açısından en gelişmiş Karadeniz şehridir. Aynı zamanda 1993'ten
-      beri Karadeniz'in tek Büyükşehir Belediyesi'ne sahip ili olan Samsun,
-      Türkiye'nin de en gelişmiş şehirleri arasındadır. <br />İl ayrıca Mustafa
-      Kemal Atatürk'ün 19 Mayıs 1919'da Milli Mücadele’yi başlatmak üzere ilk
-      adımı attığı yer olarak tarihimizde de çok önemli bir yere sahiptir.
-    </p>
-    <figure>
-      <img
-        id="harita"
-        src="../../Resimler/samsun2.jpeg"
-        title="Samsun'un siyasi haritası"
-      />
-    </figure>
-    <p id="bölüm"></p>
-    <h2>Tarihçe</h2>
-    <p id="tarihçe">
-      Samsun'un tarihi de oldukça eskilere dayanmaktadır. Tarihi kaynaklarda
-      geçen bilgilere göre şehrin ilk ismi Amisos olarak geçmektedir. Antik
-      Yunan kaynaklarına göre Amazon adı verilen bir halkın da bu bölgede
-      yaşadığı belirtilmiştir. Amazonların hangi tarihte Samsun'a yerleştikleri
-      bilinmemekle beraber, sadece kadınlardan oluştuğu ve savaş sanatını çok
-      iyi bildikleri ifade edilmiştir. Öte yandan bölgeye ilk olarak Gaska
-      medeniyetinin yerleştiği belirlenmiştir. Daha sonra kent Hitit, Frigya,
-      Pers, Makedonya, Pontus, Roma, Bizans, Selçuklu ve Osmanlı gibi birçok
-      milletin egemenliği altına girdi.<br />
-      Türklerin kente gelmesi Selçuklular zamanında gerçekleşmiştir. Sultan II.
-      Kılıçarslan döneminde şehir fethedilmiştir. Bundan sonra arap
-      kaynaklarında bölgenin adı Samsun, batı kaynaklarında ise Sampson olarak
-      geçmiştir. Osmanlı Devleti zamanında yaşanan savaşlar ve siyasi olaylar
-      neticesinde kent büyük bir gelişme gösterememiştir.<br />
-      Bunun yanında tütün ekiminin yaygınlaşması ve buharlı gemi işletiminin
-      Karadenizde'de artmaya başlaması Samsun'un gelişmesinde önemli etkenler
-      olmuşlardır. Şehrin nüfusu buna bağlı olarak zamanla artmıştır. Birinci
-      dünya savaşı yıllarında ise ticareti felce uğrayan Samsun çok sıkıntı
-      çekmiştir. Türkiye Cumhuriyet tarihinde şehir büyük önem kazanarak bir
-      ticaret merkezi haline gelmiştir. Ayrıca milli mücadelenin temelleri de
-      Mustafa Kemal Atatürk önderliğinde bu kentte atıldığı için büyük öneme
-      sahiptir.
-    </p>
-    <a
-      id="link"
-      href="https://tr.wikipedia.org/wiki/Samsun_tarihi#:~:text=Samsun%20tarihi%2C%20tarih%20%C3%B6ncesi%20d%C3%B6nemde,3500%20aras%C4%B1nda%20buraya%20gelen%20Ka%C5%9Fkalard%C4%B1r."
-      target="_blank"
-    >
-      <ins>Daha detaylı tarihçe için tıklayınız</ins></a
-    >
   </body>
 </html>

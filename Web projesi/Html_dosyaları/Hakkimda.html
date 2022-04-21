@@ -4,57 +4,77 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="../css/bootstrap.min.css"
+      rel="stylesheet"   
+    />
     <link rel="stylesheet" href="../Css_dosyaları/Hakkimda.css" />
     <link rel="stylesheet" href="../Css_dosyaları/navbar.css" />
+   
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
     <title>Hakkımda</title>
   </head>
-  <body>
-    <ul class="navbar">
-      <li>
-        <a href="Hakkimda.html"> <i class="fas fa-user"> </i> Hakkımda </a>
-      </li>
-      <li>
-        <a href="Egitim.html">
-          <i class="fa-solid fa-graduation-cap"></i> Eğitim Bilgilerim
-        </a>
-      </li>
+  <body>    
+      <ul class="navbar">
+        <li>
+          <a href="Hakkimda.html"> <i class="fas fa-user"> </i> Hakkımda </a>
+        </li>
+        <li>
+          <a href="Egitim.html">
+            <i class="fa-solid fa-graduation-cap"></i> Eğitim Bilgilerim
+          </a>
+        </li>
 
-      <li>
-        <a href="#">
-          <i class="fa-solid fa-city"> </i> Şehrim
-          <i class="fa-solid fa-caret-down"></i>
-        </a>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-city"> </i> Şehrim
+            <i class="fa-solid fa-caret-down"></i>
+          </a>
 
-        <ul>
-          <li>
-            <a href="../Html_dosyaları/Şehrim_html/Bilgiler.html"> Bilgiler </a>
-          </li>
-          <li>
-            <a href="#"> Gezilecek Yerler </a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="#"> Mirasımız</a>
-      </li>
-      <li>
-        <a href="#"> İlgi Alanlarım</a>
-      </li>
-      <li>
-        <a href="#"> İletişim</a>
-      </li>
-    </ul>
-    <div class="fotograf1">
-      <figure>
-        <img src="../Resimler/eray.jpeg" />
-      </figure>
-    </div>
+          <ul>
+            <li>
+              <a href="../Html_dosyaları/Şehrim_html/Bilgiler.html">
+                Bilgiler
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Gezilecek Yerler <i class="fa-solid fa-caret-down"></i
+              ></a>
+              <ul>
+                <li>
+                  <a href="../Html_dosyaları/Şehrim_html/Müzeler.html"
+                    >Müzeler</a
+                  >
+                </li>
+                <li>
+                  <a href="../Html_dosyaları/Şehrim_html/Turistik.html">Turistik Yerler</a>
+                </li>
+                <li>
+                  <a href="#">Doğal Güzellikler</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"> Mirasımız</a>
+        </li>
+        <li>
+          <a href="#"> İlgi Alanlarım</a>
+        </li>
+        <li>
+          <a href="#"> İletişim</a>
+        </li>
+      </ul>
+    <figure id="ben">
+      <img src="../Resimler/Hakkımda/eray.jpeg" />
+    </figure>
     <div class="hakkimda">
-      <div class="paragraf1">
+      <div class="paragraf p-3 mb-3 border border-dark border-2 rounded" >
         <h2><strong>Kişisel Bilgilerim </strong></h2>
         <p>
           Merhaba, ben Eray Şen. Bu sitenin kurucusu ve yazarıyım. 14 Ağustos
@@ -64,8 +84,6 @@
           <br />
           <br />
         </p>
-      </div>
-      <div class="paragraf2">
         <h2><strong>Hobilerim </strong></h2>
         <h3>Spor</h3>
         <p>
@@ -73,75 +91,54 @@
           oynamayı çok severim. Futbolda Premier Lig Basketbolda ise Euroleague
           takip ettiğim favori liglerimdir.
         </p>
-
-        <a href="https://www.premierleague.com" target="_blank">
-          <img
-            src="../Resimler/Premier.jpeg"
-            title="Premier Lig Resmi Sitesi"
-          />
-        </a>
-        <a
-          href="https://www.euroleaguebasketball.net/euroleague/"
-          target="_blank"
-        >
-          <img
-            src="../Resimler/Euroleague.jpeg"
-            title="Euroleague Resmi Sitesi"
-          />
-        </a>
-      </div>
-      <div class="fotograf2">
-        <figure>
-          <img src="../Resimler/kamp.jpeg" />
-        </figure>
-      </div>
-      <div class="fotograf3">
-        <figure>
-          <img src="../Resimler/kamp2.jpeg" />
-        </figure>
-      </div>
-      <div class="fotograf4">
-        <figure>
-          <img src="../Resimler/kedi.jpeg" />
-        </figure>
-      </div>
-      <div class="fotograf5">
-        <figure>
-          <img src="../Resimler/kedi2.jpeg" />
-        </figure>
-      </div>
-      <div class="fotograf6">
-        <figure>
-          <img src="../Resimler/bisiklet.jpeg" />
-        </figure>
-      </div>
-      <div class="fotograf7">
-        <figure>
-          <img src="../Resimler/bisiklet2.jpeg" />
-        </figure>
-      </div>
-      <div class="paragraf3">
+        <nav id="logo">
+          <a href="https://www.premierleague.com" target="_blank">
+            <img
+              src="../Resimler/Premier.jpeg"
+              title="Premier Lig Resmi Sitesi"
+            />
+          </a>
+          <a
+            href="https://www.euroleaguebasketball.net/euroleague/"
+            target="_blank"
+          >
+            <img
+              src="../Resimler/Euroleague.jpeg"
+              title="Euroleague Resmi Sitesi"
+            />
+          </a>
+        </nav>
         <h3>Doğa</h3>
         <p>
           Spor dışında doğa ile ilgili şeyler hoşuma gider ve doğayla iç içe
           olmayı, doğada vakit geçirmeyi ve özellikle kamp yapmayı çok severim.
           İlk kampımı 2020 yılının Eylül ayında Kocaeli'nde bulunan bir ormanda
-          yapmıştım.
+          yapmıştım.    
+         <div class="a">       
+          <div class="cerceve">
+            <div class="galeri">
+              <img class="img-1" src="../Resimler/Hakkımda/kamp.jpeg">
+              <img class="img-2" src="../Resimler/Hakkımda/kamp2.jpeg">          
+            </div>
+          </div>
+        </div>
         </p>
         <br />
         <br /><br />
         <h3>Hayvanlar</h3>
         <p>
-          Bunların yanısıra tabii ki olmazsa olmazlarım hayvanlar, onların
+          Bunların yanısıra tabii ki olmazsa olmazlarım hayvanlar; onların
           sevgisini, dostluğunu hissedip onlarla güzel bağlar kurmayı çok
           seviyorum. Bu zamana kadar balık, tavşan, kuş, kedi ve köpek gibi
           birçok hayvan sahiplendim. Fotoğraflarda olan dostum Mauk'u ise geçen
           sene kaybettim. Onunla aramda çok özel bir bağ vardı ve onu çok
           seviyordum.
+          <figure id="kedi">
+            <img src="../Resimler/Hakkımda/kedi.jpeg" />
+            <img src="../Resimler/Hakkımda/kedi2.jpeg" />
+          </figure>
         </p>
-      </div>
 
-      <div class="paragraf4">
         <h3>Bisiklet</h3>
         <p>
           Bisiklet tutkusu ise birçok kişide olduğu gibi bende de çocukken
@@ -149,20 +146,30 @@
           16 yaşıma geldiğimde ise bunu bir hobi olarak yapmaya başladım ve
           sürekli yeni rotalar keşfedip düzenli şekilde bisiklet yolculukları
           yapmaya devam ediyorum.
+          <div class="cerceve">
+            <div class="galeri">
+              <img class="img-1" src="../Resimler/Hakkımda/bisiklet.jpeg">
+              <img class="img-2" src="../Resimler/Hakkımda/bisiklet2.jpeg">   
+                   
+            </div>
+          </div>
+          <br />
         </p>
       </div>
     </div>
   </body>
-  <footer>
-    &nbsp; &nbsp; &nbsp; &nbsp; <ins> <sup>Kişisel Hesaplarım--></sup></ins>
-    <a
+  <footer >
+  
+ 
+    <a class="badge rounded-pill bg-warning mt-3"
       href="https://www.instagram.com/erraysen/"
       target="_blank"
       title="İnstagram hesabım"
     >
       <i class="fa-brands fa-instagram"> </i
     ></a>
-    <a
+    <--Kişisel Hesaplarım-->
+    <a class="badge rounded-pill bg-primary mt-3"
       href="https://twitter.com/erraysen"
       target="_blank"
       title="Twitter hesabım"

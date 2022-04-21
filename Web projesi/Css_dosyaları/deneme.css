@@ -1,0 +1,82 @@
+/* .navbar ul li {
+  background-color: darkcyan;
+  margin-top: -10%;
+  margin-left: -1%;
+}  */
+.navbar {
+  background-color: darkcyan;
+  width: 102%;
+  margin-top: -20%;
+  margin-left: -1%;
+}
+* {
+  list-style: none;
+}
+/* .navbar ul {
+  background-color: rgb(7, 174, 174);
+  width: 200px;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  transition: 0.5s;
+ 
+} */
+
+a {
+  text-decoration: none;
+}
+.navbar li {
+  margin-left: 15%;
+  position: relative;
+  text-align: center;
+}
+.nav-link {
+  color: bisque !important;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  transition: 0.7s;
+  font-family: inherit !important ;
+  font-style: oblique !important;
+}
+/* .navbar ul li a {
+  color: bisque;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  transition: 0.7s;
+  font-family: inherit !important ;
+  font-style: oblique !important;
+} */
+#şehir ul,
+#yerler ul {
+  background-color: rgb(7, 174, 174);
+  width: 200px;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+#şehir:hover > ul,
+#yerler:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  top: 50px;
+  width: 200%;
+}
+#yerler:hover > ul {
+  top: 80%;
+  left: 75%;
+}
+
+/* .navbar > li:hover > ul,
+.navbar > li:focus > ul {
+  opacity: 1;
+  visibility: visible;
+  top: 50px;
+} */
+/* #şehir:hover > ul li {
+  opacity: 1;
+  visibility: visible;
+  top: 80%;
+  left: 70%;
+  transition: 0.5s;
+} */

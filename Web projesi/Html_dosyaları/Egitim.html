@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../Css_dosyaları/Egitim.css" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../Css_dosyaları/navbar.css" />
+    <link rel="stylesheet" href="../Css_dosyaları/Egitim.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+
     <title>Eğitim Bilgieri</title>
   </head>
   <body>
@@ -31,8 +33,24 @@
           <li>
             <a href="../Html_dosyaları/Şehrim_html/Bilgiler.html"> Bilgiler </a>
           </li>
+
           <li>
-            <a href="#"> Gezilecek Yerler </a>
+            <a href="#">
+              Gezilecek Yerler <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <ul>
+              <li>
+                <a href="../Html_dosyaları/Şehrim_html/Müzeler.html">Müzeler</a>
+              </li>
+              <li>
+                <a href="../Html_dosyaları/Şehrim_html/Turistik.html"
+                  >Turistik Yerler</a
+                >
+              </li>
+              <li>
+                <a href="#">Doğal Güzellikler</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </li>
@@ -46,7 +64,6 @@
         <a href="#"> İletişim</a>
       </li>
     </ul>
-
     <div class="paragraf1">
       <article>
         <header>
@@ -54,30 +71,32 @@
         </header>
         <section>
           <p>
+            <br />
             2009 yılında ilkokula yaşadığım mahallenin okulu olan Yavuz Selim
             ilkokulunda başladım. 3. sınıfa kadar orada eğitim gördükten sonra
             bu okul ortaokula dönüştüğünden dolayı Teğmen Burak Evirgen
             ilkokuluna geçtim. <br />
           </p>
           <p>
-            Ortaokulda ise Pendik'e taşındığımız için Pendik'teki Bayramlar
-            Koleji'ne başladım ve ortaokulu 2017 yılında burada bitirdim.
+            Ortaokulda ise 2014 yılında Kartal'dan Pendik'e taşındığımız için
+            Pendik'teki Bayramlar Koleji'ne başladım ve ortaokulu 2017 yılında
+            burada bitirdim.
             <br />
           </p>
           <p>
             Ortaokulun sonunda girdiğim sınavla Kartal'da olan Türk Kızılayı
-            Kartal Anadolu Lisesi'ni kazandım ve 4 yıllık lise hayatım burada
-            geçti.
+            Kartal Anadolu Lisesi'ni kazandım ve 4 yıllık lise hayatımın tamamı
+            burada geçti.
             <br />
           </p>
           <p>
-            Lisenin sonunda girdiğim sınav sonrasında ise Sakarya Üniversitesi
-            Bilgisayar Mühendisliği bölümünü tercih ettim ve şuan 1. sınıf
-            öğrencisiyim.
+            Lisenin sonunda girdiğim uzun maratonlu sınavın sonrasında ise
+            Sakarya Üniversitesi Bilgisayar Mühendisliği bölümünü tercih ettim
+            ve şuan 1. sınıf öğrencisiyim.
           </p>
 
           <div class="tablo">
-            <table>
+            <table class="table table-striped mt-4">
               <thead>
                 <tr>
                   <th>Öğretim</th>
@@ -87,7 +106,12 @@
               </thead>
               <tbody>
                 <tr>
-                  <td style="background-color: bisque" ; rowspan="2">
+                  <td
+                    class="ilkokul"
+                    style="background-color: bisque"
+                    ;
+                    rowspan="2"
+                  >
                     İlkokul
                   </td>
                   <td>2009-2011</td>
@@ -109,7 +133,7 @@
                 </tr>
                 <tr>
                   <td style="background-color: bisque">Ortaokul</td>
-                  <td>2013-2017</td>
+                  <td>2014-2017</td>
                   <td colspan="2">
                     <a href="https://www.bayramlaregitim.com/" target="_blank">
                       Pendik Bayramlar Koleji
@@ -130,8 +154,8 @@
                   <td>2021-Devam Ediyor</td>
                   <td colspan="2">
                     <a href="https://cs.sakarya.edu.tr/" target="_blank">
-                      Sakarya Üniversitesi (Bilgisayar Mühendisliği)</a
-                    >
+                      Sakarya Üniversitesi (Bilgisayar Mühendisliği)
+                    </a>
                   </td>
                 </tr>
               </tbody>
@@ -139,12 +163,12 @@
           </div>
         </section>
       </article>
+      <footer>
+        <ins
+          >Okulların resmi sitesini ziyaret etmek için isimlerinin üstüne
+          tıklayabilirsiniz.</ins
+        >
+      </footer>
     </div>
-    <footer>
-      <ins
-        >Okulların resmi sitesini ziyaret etmek için isimlerinin üstüne
-        tıklayabilirsiniz.</ins
-      >
-    </footer>
   </body>
 </html>
