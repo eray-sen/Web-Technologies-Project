@@ -33,6 +33,9 @@ p {
   margin-left: 5%;
   font-family: Raleway;
 }
+body {
+  background-color: whitesmoke;
+}
 .muzeler {
   background-color: bisque;
   padding: 2%;
@@ -47,7 +50,7 @@ p {
 }
 #arkeoloji {
   margin-left: 52%;
-  margin-top: -28%;
+  margin-top: -30%;
 }
 #panaroma {
   margin-left: 52%;
@@ -55,15 +58,178 @@ p {
 }
 #amazon {
   margin-left: 52%;
-  margin-top: -35 !important;
+  margin-top: -50%;
 }
 #tütün {
   margin-left: 52%;
-  margin-top: -20%;
+  margin-top: -25%;
 }
 .cerceve {
   margin-left: 52%;
-  margin-top: -25%;
+  margin-top: -30%;
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1200px) {
+  p {
+    margin-left: 25%;
+  }
+  .cerceve {
+    margin-top: 10%;
+    margin-left: 20%;
+    width: 400px !important;
+    height: 200px !important;
+    overflow: hidden;
+    border: 2px solid black;
+    position: relative;
+  }
+  .cerceve img {
+    width: 25%;
+    float: left;
+  }
+  img {
+    width: 400px;
+    height: 200px;
+  }
+  .img-1 {
+    left: 0px;
+  }
+  .img-2 {
+    left: 400px;
+  }
+  .img-3 {
+    left: 800px;
+  }
+  .img-4 {
+    left: 1200px;
+  }
+  .cerceve > .galeri {
+    position: absolute;
+    left: 0px;
+    width: 1600px;
+    height: 200px;
+    animation-duration: 16s;
+    animation-name: sliders;
+    animation-iteration-count: infinite;
+  }
+  .galeri:hover {
+    animation-play-state: paused;
+  }
+  @keyframes sliders {
+    0% {
+      left: 0px;
+    }
+    20% {
+      left: 0px;
+    }
+    25% {
+      left: -400px;
+    }
+    45% {
+      left: -400px;
+    }
+    50% {
+      left: -800px;
+    }
+    55% {
+      left: -800px;
+    }
+    75% {
+      left: -1200px;
+    }
+    80% {
+      left: -1200px;
+    }
+  }
+  #arkeoloji,
+  #panaroma,
+  #amazon,
+  #tütün {
+    width: 400px;
+    height: 200px;
+    margin-left: 20%;
+    margin-top: 0%;
+  }
+  @media screen and (max-width: 768px) {
+    p {
+      width: 60%;
+      margin-left: 20%;
+    }
+    .cerceve {
+      margin-top: 10%;
+      margin-left: 10%;
+      width: 300px !important;
+      height: 150px !important;
+      overflow: hidden;
+      border: 2px solid black;
+      position: relative;
+    }
+    .cerceve img {
+      width: 25%;
+      float: left;
+    }
+    img {
+      width: 300px;
+      height: 150px;
+    }
+    .img-1 {
+      left: 0px;
+    }
+    .img-2 {
+      left: 300px;
+    }
+    .img-3 {
+      left: 600px;
+    }
+    .img-4 {
+      left: 900px;
+    }
+    .cerceve > .galeri {
+      position: absolute;
+      left: 0px;
+      width: 1200px;
+      height: 150px;
+      animation-duration: 16s;
+      animation-name: sliders;
+      animation-iteration-count: infinite;
+    }
+    .galeri:hover,
+    .galeri:checked {
+      animation-play-state: paused;
+    }
+    @keyframes sliders {
+      0% {
+        left: 0px;
+      }
+      20% {
+        left: 0px;
+      }
+      25% {
+        left: -300px;
+      }
+      45% {
+        left: -300px;
+      }
+      50% {
+        left: -600px;
+      }
+      55% {
+        left: -600px;
+      }
+      75% {
+        left: -900px;
+      }
+      80% {
+        left: -900px;
+      }
+    }
+    #arkeoloji,
+    #panaroma,
+    #amazon,
+    #tütün {
+      width: 300px;
+      height: 150px;
+      margin-left: 10%;
+      margin-top: 0%;
+    }
+  }
 }

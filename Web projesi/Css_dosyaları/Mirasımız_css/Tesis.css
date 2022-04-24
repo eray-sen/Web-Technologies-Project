@@ -1,0 +1,33 @@
+h2 {
+  margin-left: 3% !important;
+}
+iframe {
+  width: 40%;
+}
+.tesis {
+  color: black;
+  padding: 2%;
+  font-size: 18px;
+  margin-left: 10%;
+  margin-top: 4%;
+  text-align: center;
+  width: 80%;
+  background-color: rgb(230, 230, 230);
+  border: 2px solid black;
+}
+#foto {
+  width: 70%;
+}
+#konum {
+  margin-left: -60% !important;
+  margin-bottom: 5%;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    margin-left: 15% !important;
+  }
+  #map {
+    width: 250px;
+    height: 150px;
+  }
+}

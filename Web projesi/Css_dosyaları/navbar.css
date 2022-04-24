@@ -1,95 +1,84 @@
-* {
-  list-style: none;
-  border: 0;
+body {
+  /* padding: 15px; */
+  /* background-color: darkcyan !important; */
 }
-a {
-  text-decoration: none;
+
+.container {
+  background-color: white;
+  /* border-radius: 30px; */
+  padding-left: 0rem !important;
+  padding-right: 0rem !important;
 }
-ul.navbar {
-  background-color: darkcyan;
-  height: 90px;
-  width: 101%;
-  margin-top: -1%;
-  margin-left: -1%;
+.navbar {
+  padding: 0% 5% 0% 5%;
+  /* border-top-left-radius: 30px; */
+  /* border-top-right-radius: 30px; */
 }
-ul.navbar > li {
-  margin-top: 2%;
-  margin-left: 5%;
-  float: left;
-  height: 30px;
-  position: relative; /* alt menülerin doğru seçeneğin altında çıkmasını sağlar. */
+.navbar-nav li {
+  margin: 5px;
 }
-ul.navbar > li > a {
-  display: block;
-  font-size: 18px;
-  margin-left: -40%;
-  color: bisque;
-  border-right: 1px solid rgba(0, 0, 0, 0.2);
-  transition: 0.7s;
+.navbar-nav li i {
+  margin: 8px;
+  margin-left: 30px;
+}
+
+.container .btn {
+  border-radius: 10px;
+}
+#navbar > li > a {
+  border-right: 1px solid #9a9d9f7f;
   font-family: inherit !important ;
   font-style: oblique !important;
 }
-ul.navbar a:hover,
-ul.navbar a:focus {
+#navbar a:hover,
+.btn:hover {
+  transition: 0.7s;
   color: brown;
 }
-ul.navbar ul {
-  background-color: rgb(7, 174, 174);
-  width: 200px;
+#navbar ul {
+  background-color: #212529;
+  list-style: none;
   position: absolute;
-  top: 40px;
-  left: 0px;
   opacity: 0; /*alt menü ilk başta gözükmeyecek*/
   transition: 0.5s;
   visibility: hidden; /* sadece ana menünün üstüne gelince drop menü açılır*/
 }
-ul.navbar ul li a {
-  display: block;
-  color: bisque;
+a {
+  color: #9a9d9f;
+  text-decoration: none;
 }
-ul.navbar > li:hover > ul,
-ul.navbar > li:focus > ul {
+#navbar ul li {
+  width: 170px;
+}
+#miras {
+  margin-left: 20%;
+}
+#dropdown {
+  margin-left: 15%;
+}
+#navbar ul li ul li {
+  width: 200px;
+}
+#navbar > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  top: 95%;
+  left: 35%;
+}
+#navbar ul li:hover > ul {
   opacity: 1;
   visibility: visible;
   top: 80%;
-  left: 40%;
-}
-ul.navbar > li ul ul {
-  top: 0;
-  left: 70%;
-}
-ul.navbar ul li:hover > ul {
-  opacity: 1;
-  visibility: visible;
-  top: 80%;
-  left: 70%;
+  left: 80%;
   transition: 0.5s;
 }
-@media screen and (max-width: 870px) {
-  ul.navbar > li > a {
-    font-size: 12px;
-  }
-  ul.navbar {
-    height: 70px;
-  }
-  ul.navbar ul li:hover > ul,
-  ul.navbar > li:hover > ul {
-    font-size: 12px;
-    width: 150px;
-    top: 30px;
-  }
+#active {
+  text-decoration: underline;
 }
-@media screen and (max-width: 700px) {
-  ul.navbar > li > a {
-    font-size: 9px;
-  }
-  ul.navbar {
-    height: 50px;
-  }
-  ul.navbar ul li:hover > ul,
-  ul.navbar > li:hover > ul {
-    font-size: 9px;
-    width: 120px;
-    top: 25px;
-  }
+#çizgi {
+  margin-left: -10%;
+  opacity: 20%;
+  width: 100%;
+  border: 1px solid whitesmoke;
+  margin-top: 3%;
 }

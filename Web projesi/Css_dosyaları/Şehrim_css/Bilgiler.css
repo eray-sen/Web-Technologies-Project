@@ -38,9 +38,10 @@ p {
   width: 80%;
   font-family: Raleway;
 }
-.container {
+.content {
   background-color: bisque;
   border: 2px solid black;
+  margin-top: 4%;
 }
 nav {
   margin-left: 5%;
@@ -60,9 +61,18 @@ nav a {
 nav a:hover {
   color: brown;
 }
-#link {
-  margin-left: 43%;
+#link,
+#link2 {
   font-size: 18px;
+  color: rgb(12, 12, 137);
+}
+#link {
+  margin-left: 40%;
+}
+#link:hover,
+#link2:hover {
+  transition: 0.5s;
+  color: brown;
 }
 #giriş {
   margin-top: -20%;
@@ -111,16 +121,16 @@ th {
   color: black;
   border-width: 1px;
 }
-ul {
-  margin-left: 45%;
+#barajlar {
+  margin-left: 40%;
   font-size: 18px;
 }
+#HES {
+  color: rgb(12, 12, 137);
+}
+
 #barajlar li {
   list-style-type: disc;
-}
-ul p {
-  margin-left: -48%;
-  color: rgb(12, 12, 137);
 }
 #baraj {
   margin-left: 20%;
@@ -142,8 +152,8 @@ ul p {
   margin-left: 5%;
 }
 #hastane {
-  width: 25%;
-  margin-left: 40%;
+  width: 30%;
+  margin-left: 35%;
 }
 
 ul.navbar ul li:hover > ul {

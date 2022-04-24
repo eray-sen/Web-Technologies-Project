@@ -1,0 +1,22 @@
+
+#detay {
+  font-size: 20px;
+  color: black;
+  margin-left: 5%;
+}
+#detay:hover {
+  transition: 0.7s;
+  color: brown;
+}
+.tarihçe {
+  font-family: Raleway;
+  color: black;
+  padding: 2%;
+  font-size: 18px;
+  margin-left: 10%;
+  margin-top: 4%;
+  text-align: center;
+  width: 80%;
+  background-color: rgb(230, 230, 230);
+  border: 2px solid black;
+}

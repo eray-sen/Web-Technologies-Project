@@ -1,0 +1,52 @@
+h1 {
+  color: rgb(181, 0, 0);
+  text-decoration: underline;
+  font-style: oblique;
+  font-size: 220%;
+  margin-left: 40%;
+  width: 140px;
+}
+h2 {
+  font-family: Ubuntu;
+  font-style: oblique;
+  font-size: 200%;
+  color: darkred;
+  margin-top: 5%;
+  text-align: center;
+  margin-left: 5%;
+}
+h3 {
+  font-family: Ubuntu;
+  font-style: oblique;
+  font-size: 175%;
+  color: rgba(182, 10, 10, 0.915);
+  margin-top: 5%;
+  margin-left: 18%;
+}
+h4 {
+  font-family: Ubuntu;
+  font-style: oblique;
+  font-size: 150%;
+  color: rgba(180, 5, 5, 0.74);
+  margin-top: 1%;
+  margin-left: 18%;
+}
+p {
+  color: black;
+  font-size: 20px;
+  margin-left: 10%;
+  text-align: center;
+  width: 80%;
+  font-family: Raleway;
+}
+#bölüm {
+  margin-left: 5%;
+  opacity: 20%;
+  width: 90%;
+  border-style: solid;
+  color: black;
+  border-width: 1px;
+}
+#samsunspor img {
+  height: 30px;
+}
