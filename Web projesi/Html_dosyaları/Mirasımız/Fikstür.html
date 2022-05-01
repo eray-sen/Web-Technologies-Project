@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../../Css_dosyaları/Tasarım.css" />
+    <link
+      rel="stylesheet"
+      href="../../Css_dosyaları/Mirasımız_css/Fikstür.css"
+    />
+    <link rel="stylesheet" href="../../Css_dosyaları/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Fikstür ve Puan Durumu</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar bg-dark navbar-dark navbar-expand-sm">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mobile"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="mobile" class="collapse navbar-collapse">
+            <ul id="navbar" class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a href="Hakkimda.html" class="nav-link " id="active"
+                  ><i class="fas fa-user"></i>Hakkımda</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="../Egitim.html" class="nav-link"
+                  ><i class="fa-solid fa-graduation-cap"></i>Eğitim Bilgilerim</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"
+                  ><i class="fa-solid fa-city"></i>Şehrim <i class="fa-solid fa-caret-down"></i></a
+                >
+                <ul>
+                    <li>
+                      <a href="../Şehrim/Bilgiler.html"> Bilgiler </a>
+                    </li>
+          
+                    <li>
+                      <a href="#">
+                        Gezilecek Yerler <i class="fa-solid fa-caret-down"></i
+                      ></a>
+                      <ul>
+                        <li>
+                          <a href="../Şehrim/Müzeler.html">Müzeler</a>
+                        </li>
+                        <li>
+                          <a href="../Şehrim/Turistik.html"
+                            >Turistik Yerler</a
+                          >
+                        </li>
+                        <li>
+                          <a href="../Şehrim/Doğal.html">Doğal Güzellikler</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link" id="samsunspor">
+                <img id="logo" src="../../Resimler/Mirasımız/samsun.png">
+                    Mirasımız <i class="fa-solid fa-caret-down"></i></a
+                >
+                <ul id="dropdown">
+                  <li>
+                    <a id="miras" href="#"> Kulüp <i class="fa-solid fa-caret-down"></i></a>
+                    <ul>
+                      <li>
+                        <a href="Tarihçe.html">
+                          Tarihçe 
+                        </a>
+                      </li>
+                      <p id="çizgi"></p>
+                      <li>
+                      <a href="Başkanlar.html">
+                       Başkanlar 
+                      </a>
+                      </li>
+                      <p id="çizgi"></p>
+                      <li>
+                        <a href="Tesis.html">
+                          Nuri Asan Tesisi 
+                        </a>
+                        </li>
+                        <p id="çizgi"></p>
+                        <li>
+                          <a href="Stadyum.html">
+                            19 Mayıs Stadyumu
+                          </a>
+                          </li>
+                      </ul>
+                   </li>
+  
+                  <li>
+                    <a id="miras" href="#"> Takım <i class="fa-solid fa-caret-down"></i></a>
+                    <ul>
+                      <a href="Kadro.html">
+                        Takım Kadrosu <i class="fa-solid fa-caret-down"></i
+                      ></a>
+                    </li>
+                      <p id="çizgi"></p>
+                        <li>
+                          <a href="#">
+                            Fikstür ve Puan Durumu <i class="fa-solid fa-caret-down"></i
+                          ></a>
+                      </li>
+                    </ul>
+                  </li>
+                    
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"
+                  ><i class="fa-solid fa-guitar"></i>İlgi Alanlarım</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="../İletisim/İletisim.html" class="nav-link"
+                  ><i class="fa-solid fa-phone"></i>İletişim</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex">
+              <a
+                class="btn btn-primary"
+                href="http://eray-macbook-air.local/dashboard/login.php"
+                >Login</a
+              >
+            </form>
+          </div>
+        </div>
+        <div class="puan durumu">
+            <h1>SAMSUNSPOR</h1>
+            <h2> PUAN TABLOSU</h2>
+     <table class="table table-hover table table-bordered" id = "Table" align="center">
+        <thead>
+            <th>Sıra</th>
+            <th class="col-2">Takım</th>
+            <th>O</th>
+            <th>G</th>
+            <th>B</th>
+            <th>M</th>
+            <th>A.G</th>
+            <th >Y.G</th>
+            <th>AV</th>
+            <th>Puan</th>
+                                                   
+        </thead>
+
+        <tbody>
+            <tr >
+                <td id="üst"> 1</td> 
+                <td id="logo"> <img src="../../Resimler/Takımlar/ankaragücü.png" width="20"> Ankaragücü </td>
+                <td>33</td>
+                <td>20</td>
+                <td>6</td>
+                <td>7</td>
+                <td>53</td>
+                <td>28</td>
+                <td>+25</td>
+                <td><b>66</b> </td>   
+           </tr>   
+
+           <tr >
+                <td id="üst"> 2</td> 
+                <td id="logo"> <img src="../../Resimler/Takımlar/ümraniye.png" width="20"> Ümraniyespor </td>
+                <td>32</td>
+                <td>19</td>
+                <td>6</td>
+                <td>7</td>
+                <td>54</td>
+                <td>31</td>
+                <td>+23</td>
+                <td><b>63</b> </td>   
+           </tr>
+
+           <tr >
+                <td id="play-off"> 3</td> 
+                <td id="logo"> <img src="../../Resimler/Takımlar/bandırma.png" width="20"> Bandırmaspor </td>
+                <td>32</td>
+                <td>17</td>
+                <td>4</td>
+                <td>11</td>
+                <td>47</td>
+                <td>29</td>
+                <td>+18</td>
+                <td><b>55</b> </td>   
+           </tr> 
+           
+           <tr >
+                <td id="play-off"> 4</td> 
+                <td id="logo"> <img src="../../Resimler/Takımlar/istanbul.png" width="20"> İstanbulspor </td>
+                <td>32</td>
+                <td>16</td>
+                <td>6</td>
+                <td>10</td>
+                <td>54</td>
+                <td>38</td>
+                <td>+16</td>
+                <td><b>54</b> </td>   
+           </tr>     
+
+           <tr >
+            <td id="play-off"> 5</td> 
+            <td id="logo"> <img src="../../Resimler/Takımlar/erzurum.png" width="20"> Erzurumspor </td>
+            <td>32</td>
+            <td>15</td>
+            <td>9</td>
+            <td>8</td>
+            <td>51</td>
+            <td>36</td>
+            <td>+15</td>
+            <td><b>53</b> </td>   
+           </tr>     
+
+           <tr >
+            <td id="play-off"> 6</td> 
+            <td id="logo"> <img src="../../Resimler/Takımlar/eyüp.png" width="20"> Eyüpspor </td>
+            <td>32</td>
+            <td>13</td>
+            <td>12</td>
+            <td>7</td>
+            <td>48</td>
+            <td>38</td>
+            <td>+10</td>
+            <td><b>51</b> </td>   
+          </tr>     
+
+          <tr id="samsun">
+            <td> 7</td> 
+            <td id="logo"> <img src="../../Resimler/Takımlar/samsun.png" width="20"> Samsunspor </td>
+            <td>32</td>
+            <td>12</td>
+            <td>10</td>
+            <td>10</td>
+            <td>49</td>
+            <td>42</td>
+            <td>+7</td>
+            <td><b>46</b> </td>   
+          </tr>  
+
+          <tr >
+            <td> 8</td> 
+            <td id="logo"> <img src="../../Resimler/Takımlar/manisa.png" width="20"> Manisa FK </td>
+            <td>33</td>
+            <td>13</td>
+            <td>7</td>
+            <td>13</td>
+            <td>39</td>
+            <td>38</td>
+            <td>+1</td>
+            <td><b>46</b> </td>   
+          </tr>   
+
+          <tr >
+            <td> 9</td> 
+            <td id="logo"> <img src="../../Resimler/Takımlar/tuzla.png" width="20"> Tuzlaspor </td>
+            <td>32</td>
+            <td>12</td>
+            <td>9</td>
+            <td>11</td>
+            <td>38</td>
+            <td>33</td>
+            <td>+5</td>
+            <td><b>45</b> </td>   
+          </tr>   
+
+          <tr >
+            <td> 10</td> 
+            <td id="logo"> <img src="../../Resimler/Takımlar/adana.png" width="20"> Adanaspor </td>
+            <td>32</td>
+            <td>12</td>
+            <td>8</td>
+            <td>13</td>
+            <td>38</td>
+            <td>38</td>
+            <td>0</td>
+            <td><b>44</b> </td>   
+           </tr>   
+
+          <tr >
+            <td> 11</td> 
+            <td id="logo"> <img src="../../Resimler/Takımlar/gençler.png" width="20"> Gençlerbirliği </td>
+            <td>32</td>
+            <td>12</td>
+            <td>6</td>
+            <td>14</td>
+            <td>36</td>
+            <td>46</td>
+            <td>-10</td>
+            <td><b>42</b> </td>   
+          </tr>   
+
+          <tr >
+            <td> 12</td> 
+            <td id="logo"> <img src="../../Resimler/Takımlar/keçi.png" width="20"> Keçiörengücü </td>
+            <td>32</td>
+            <td>11</td>
+            <td>8</td>
+            <td>13</td>
+            <td>38</td>
+            <td>42</td>
+            <td>-4</td>
+            <td><b>41</b> </td>   
+          </tr>   
+
+          <tr >
+            <td> 13</td> 
+            <td id="logo"> <img src="../../Resimler/Takımlar/altınordu.png" width="20"> Altınordu </td>
+            <td>32</td>
+            <td>13</td>
+            <td>2</td>
+            <td>18</td>
+            <td>40</td>
+            <td>57</td>
+            <td>-17</td>
+            <td><b>41</b> </td>   
+          </tr>   
+
+          <tr >
+            <td> 14</td> 
+            <td id="logo"> <img src="../../Resimler/Takımlar/kocaeli.png" width="20"> Kocaelispor </td>
+            <td>32</td>
+            <td>11</td>
+            <td>7</td>
+            <td>14</td>
+            <td>33</td>
+            <td>43</td>
+            <td>-10</td>
+            <td><b>40</b> </td>   
+          </tr>   
+
+          <tr >
+            <td>15</td> 
+            <td id="logo"> <img src="../../Resimler/Takımlar/denizli.png" width="20"> Denizlispor </td>
+            <td>32</td>
+            <td>11</td>
+            <td>6</td>
+            <td>15</td>
+            <td>38</td>
+            <td>48</td>
+            <td>-10</td>
+            <td><b>40</b> </td>   
+          </tr>   
+
+          <tr >
+            <td id="küme">16</td> 
+            <td id="logo"> <img src="../../Resimler/Takımlar/bolu.png" width="20"> Boluspor </td>
+            <td>32</td>
+            <td>10</td>
+            <td>8</td>
+            <td>14</td>
+            <td>34</td>
+            <td>40</td>
+            <td>-6</td>
+            <td><b>38</b> </td>   
+          </tr>   
+
+          <tr >
+            <td id="küme">17</td> 
+            <td id="logo"> <img src="../../Resimler/Takımlar/menemen.png" width="20"> Menemenspor </td>
+            <td>32</td>
+            <td>8</td>
+            <td>13</td>
+            <td>11</td>
+            <td>39</td>
+            <td>50</td>
+            <td>-11</td>
+            <td><b>37</b> </td>   
+         </tr>   
+
+         <tr >
+            <td id="küme">18</td> 
+            <td id="logo"> <img src="../../Resimler/Takımlar/bursa.png" width="20"> Bursaspor </td>
+            <td>32</td>
+            <td>9</td>
+            <td>8</td>
+            <td>15</td>
+            <td>34</td>
+            <td>46</td>
+            <td>-12</td>
+            <td><b>35</b> </td>   
+         </tr>   
+
+         <tr >
+            <td id="küme">19</td> 
+            <td id="logo"> <img src="../../Resimler/Takımlar/balık.png" width="20"> Balıkesirspor </td>
+            <td>32</td>
+            <td>3</td>
+            <td>3</td>
+            <td>26</td>
+            <td>23</td>
+            <td>63</td>
+            <td>-40</td>
+            <td><b>12</b> </td>   
+         </tr>   
+
+        </tbody>   
+     </table>
+     <br>
+     <p id="üst"> Süper Lig</p> 
+     <p id="play-off">Play Off</p> 
+     <p id="küme">Küme Düşme</p> 
+
+     <h2> FİKSTÜR</h2>
+<table class="table table-hover table table-bordered" align="center" id="Fixture" >
+        <thead>
+            <th>Tarih</th>
+            <th>Skor</th>
+            <th class="col-1">Durum </th>
+            <th>Maçın Detayları</th>
+                
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td> 20.08.21  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/samsun.png" widht="20"> 
+                    Samsunspor 3-1 Balıkesirspor
+                    <img src="../../Resimler/Takımlar/balık.png" widht="20"> <br>
+                      </td>  
+                <td id="galibiyet">G</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/samsunspor-vs-bal%C4%B1kesirspor/70995k1h7fm78dlj6cixtlg5w" target="_blank">Tıklayınız</a> </td>
+
+            </tr>
+            
+            <tr>
+                <td> 28.08.21  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/kocaeli.png" widht="20"> 
+                    Kocaelispor 1-0 Samsunspor
+                    <img src="../../Resimler/Takımlar/samsun.png" widht="20"> <br>
+                      </td>  
+                <td id="mağlubiyet">M</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/kocaelispor-vs-samsunspor/71kz05kka0ds5xs5pabj0vhg4" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 12.09.21  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/samsun.png" widht="20"> 
+                    Samsunspor 2-0 Keçiörengücü
+                    <img src="../../Resimler/Takımlar/keçi.png" widht="20"> <br>
+                      </td>  
+                <td id="galibiyet">G</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/samsunspor-vs-ke%C3%A7i%C3%B6reng%C3%BCc%C3%BC/72cew6bm1cpmvv4o997zqmwwk" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 15.09.21  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/bursa.png" widht="20"> 
+                    Bursaspor 4-1 Samsunspor
+                    <img src="../../Resimler/Takımlar/samsun.png" widht="20"> <br>
+                      </td>  
+                <td id="mağlubiyet">M</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/bursaspor-vs-samsunspor/734r7w1fkjjymfjgfa2lghqtw" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 19.09.21  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/samsun.png" widht="20"> 
+                    Samsunspor 2-2 Gençlerbirliği
+                    <img src="../../Resimler/Takımlar/gençler.png" widht="20"> <br>
+                      </td>  
+                <td id="beraberlik">B</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/samsunspor-vs-gen%C3%A7lerbirli%C4%9Fi/73vyoukpl3iwj2cyz1s126uj8" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 27.09.21  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/denizli.png" widht="20"> 
+                    Denizlispor 2-3 Samsunspor
+                    <img src="../../Resimler/Takımlar/samsun.png" widht="20"> <br>
+                      </td>  
+                <td id="galibiyet">G</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/denizlispor-vs-samsunspor/74ps8nmdt75nwtjzo20qg3l78" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 03.10.21  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/samsun.png" widht="20"> 
+                    Samsunspor 2-2 Ümraniyespor
+                    <img src="../../Resimler/Takımlar/ümraniye.png" widht="20"> <br>
+                      </td>  
+                <td id="beraberlik">B</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/samsunspor-vs-%C3%BCmraniyespor/75i4mhq3whvqvjdhv25g5hnh0" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 16.10.21  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/menemen.png" widht="20"> 
+                    Menemenspor 3-2 Samsunspor
+                    <img src="../../Resimler/Takımlar/samsun.png" widht="20"> <br>
+                      </td>  
+                <td id="mağlubiyet">M</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/menemenspor-vs-samsunspor/76ampakgbuc4ao2hcv5sduc5w" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 23.10.21  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/samsun.png" widht="20"> 
+                    Samsunspor 0-0 Erzurumspor
+                    <img src="../../Resimler/Takımlar/erzurum.png" widht="20"> <br>
+                      </td>  
+                <td id="beraberlik">B</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/samsunspor-vs-bb-erzurumspor/7739qsa889blkmprmarp19r10" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 16.10.21  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/bandırma.png" widht="20"> 
+                    Bandırmaspor 2-0 Samsunspor
+                    <img src="../../Resimler/Takımlar/samsun.png" widht="20"> <br>
+                      </td>  
+                <td id="mağlubiyet">M</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/band%C4%B1rmaspor-vs-samsunspor/77wksc1x2hyvv7hrrktmhfp5g" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 06.11.21  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/samsun.png" widht="20"> 
+                    Samsunspor 1-0 Manisa FK
+                    <img src="../../Resimler/Takımlar/manisa.png" widht="20"> <br>
+                      </td>  
+                <td id="galibiyet">G</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/samsunspor-vs-manisa-fk/77zt2kr9x8bblzvzfablz2z9w" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 22.11.21  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/eyüp.png" widht="20"> 
+                    Eyüpspor 2-2 Samsunspor
+                    <img src="../../Resimler/Takımlar/samsun.png" widht="20"> <br>
+                      </td>  
+                <td id="beraberlik">B</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/ey%C3%BCpspor-vs-samsunspor/79gde8orp8yueqzi1e28piolw" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 27.11.21  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/samsun.png" widht="20"> 
+                    Samsunspor 1-0 Adanaspor
+                    <img src="../../Resimler/Takımlar/adana.png" widht="20"> <br>
+                      </td>  
+                <td id="galibiyet">G</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/takim/samsunspor/ma%C3%A7lar/dpsnqu7pd2b0shfzjyn5j1znf#:~:text=27.11,2021" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 05.12.21  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/altınordu.png" widht="20"> 
+                    Altınordu 0-2 Samsunspor
+                    <img src="../../Resimler/Takımlar/samsun.png" widht="20"> <br>
+                      </td>  
+                <td id="galibiyet">G</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/alt%C4%B1nordu-vs-samsunspor/7b641qu4tpr2ibl1wd7wdd7v8" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 12.12.21  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/samsun.png" widht="20"> 
+                    Samsunspor 2-0 Ankaragücü
+                    <img src="../../Resimler/Takımlar/ankaragücü.png" widht="20"> <br>
+                      </td> 
+                <td id="galibiyet">G</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/samsunspor-vs-mke-ankarag%C3%BCc%C3%BC/7b98u8p37qd99e2epr1add6ac" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 15.12.21  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/samsun.png" widht="20"> 
+                    Samsunspor 1-1 Boluspor
+                    <img src="../../Resimler/Takımlar/bolu.png" widht="20"> <br>
+                      </td> 
+                <td id="beraberlik">B</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/samsunspor-vs-boluspor/7cnu4opg4g292im7i4x9pcydw" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 20.12.21  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/istanbul.png" widht="20"> 
+                    İstanbulspor 2-1 Samsunspor
+                    <img src="../../Resimler/Takımlar/samsun.png" widht="20"> <br>
+                      </td>  
+                <td id="mağlubiyet">M</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/istanbulspor-vs-samsunspor/7cxc1jt2ljgzlmjld9xu00c9g" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 26.12.21  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/samsun.png" widht="20"> 
+                    Samsunspor 2-2 Tuzlaspor
+                    <img src="../../Resimler/Takımlar/tuzla.png" widht="20"> <br>
+                      </td> 
+                <td id="beraberlik">B</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/samsunspor-vs-tuzlaspor/7dpgeyi5d8p86xpjr1fo620pg" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 16.01.22  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/balık.png" widht="20"> 
+                    Balıkesirspor 0-2 Samsunspor
+                    <img src="../../Resimler/Takımlar/samsun.png" widht="20"> <br>
+                      </td>  
+                <td id="galibiyet">G</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/bal%C4%B1kesirspor-vs-samsunspor/7fgbzvf9yyidwxxhuevb2iaz8" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 21.01.22  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/samsun.png" widht="20"> 
+                    Samsunspor 3-0 Kocaelispor
+                    <img src="../../Resimler/Takımlar/kocaeli.png" widht="20"> <br>
+                      </td> 
+                <td id="galibiyet">G</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/samsunspor-vs-kocaelispor/7gtxus7nsvozr7lfudkznlm38" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 05.02.22  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/keçi.png" widht="20"> 
+                    Keçiörengücü 1-1 Samsunspor
+                    <img src="../../Resimler/Takımlar/samsun.png" widht="20"> <br>
+                      </td>  
+                <td id="beraberlik">B</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/ke%C3%A7i%C3%B6reng%C3%BCc%C3%BC-vs-samsunspor/7hqefmp4rntqg5uxrjiq2i8lw" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 11.02.22  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/samsun.png" widht="20"> 
+                    Samsunspor 1-1 Bursaspor
+                    <img src="../../Resimler/Takımlar/bursa.png" widht="20"> <br>
+                      </td>  
+                <td id="beraberlik">B</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/samsunspor-vs-bursaspor/7iiu02aqlnzs6vdtwz0fwwpp0" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 15.11.21  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/gençler.png" widht="20"> 
+                    Gençlerbirliği 2-2 Samsunspor
+                    <img src="../../Resimler/Takımlar/samsun.png" widht="20"> <br>
+                      </td>  
+                <td id="beraberlik">B</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/gen%C3%A7lerbirli%C4%9Fi-vs-samsunspor/7jdi7ayk4c610w9mvg567bjf8" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 20.02.22  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/samsun.png" widht="20"> 
+                    Samsunspor 5-0 Denizlispor
+                    <img src="../../Resimler/Takımlar/denizli.png" widht="20"> <br>
+                      </td>  
+                <td id="galibiyet">G</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/samsunspor-vs-denizlispor/7k6n5wv4o15muo9jinz6juyok" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 27.02.22  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/ümraniye.png" widht="20"> 
+                    Ümraniyespor 3-1 Samsunspor
+                    <img src="../../Resimler/Takımlar/samsun.png" widht="20"> <br>
+                      </td>  
+                <td id="mağlubiyet">M</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/%C3%BCmraniyespor-vs-samsunspor/7l34qh43iz3pcm2e6dsbzko44" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 05.03.22  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/samsun.png" widht="20"> 
+                    Samsunspor 2-4 Menemenspor
+                    <img src="../../Resimler/Takımlar/menemen.png" widht="20"> <br>
+                      </td>  
+                <td id="mağlubiyet">M</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/samsunspor-vs-menemenspor/7lxouuwqh5kw8oo6xrlhxz7kk" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 19.03.22  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/erzurum.png" widht="20"> 
+                    Erzurumspor 1-2 Samsunspor
+                    <img src="../../Resimler/Takımlar/samsun.png" widht="20"> <br>
+                      </td>  
+                <td id="galibiyet">G</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/bb-erzurumspor-vs-samsunspor/7mt9ociuar7kbu4srylm4tzpw" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+
+            <tr>
+                <td> 02.04.22  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/samsun.png" widht="20"> 
+                    Samsunspor 0-1 Bandırmaspor
+                    <img src="../../Resimler/Takımlar/bandırma.png" widht="20"> <br>
+                      </td>  
+                <td id="mağlubiyet">M</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/samsunspor-vs-band%C4%B1rmaspor/7nm5w1oq88ec2pn9ej8r28duc" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 10.04.22  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/erzurum.png" widht="20"> 
+                    Manisa FK 2-0 Samsunspor
+                    <img src="../../Resimler/Takımlar/samsun.png" widht="20"> <br>
+                      </td>  
+                <td id="mağlubiyet">M</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/manisa-fk-vs-samsunspor/7np6algsld29ud1mra2e64s9g" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 17.04.22  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/samsun.png" widht="20"> 
+                    Samsunspor 2-2 Eyüpspor
+                    <img src="../../Resimler/Takımlar/eyüp.png" widht="20"> <br>
+                      </td>  
+                <td id="beraberlik">B</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/samsunspor-vs-ey%C3%BCpspor/7p6b23f0opl2eajcntdvguluc" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 21.04.22  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/adana.png" widht="20"> 
+                    Adanaspor 1-0 Samsunspor
+                    <img src="../../Resimler/Takımlar/samsun.png" widht="20"> <br>
+                      </td>  
+                <td id="mağlubiyet">M</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/adanaspor-vs-samsunspor/7pja5n90kid3zvxplbtvj8zroc" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+            <tr>
+                <td> 25.04.22  </td>
+                <td> 
+                    <img src= "../../Resimler/Takımlar/samsun.png" widht="20"> 
+                    Samsunspor 2-1 Altınordu
+                    <img src="../../Resimler/Takımlar/altınordu.png" widht="20"> <br>
+                      </td>  
+                <td id="galibiyet">G</td>
+                <td> <a id="detay" href ="https://www.mackolik.com/mac/samsunspor-vs-alt%C4%B1nordu/7qxaeez29w1ugl9xssi33w2z8" target="_blank">Tıklayınız</a> </td>
+            </tr>
+
+
+
+
+            
+
+    
+</body>
+</html>

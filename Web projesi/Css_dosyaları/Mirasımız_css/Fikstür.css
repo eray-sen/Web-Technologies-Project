@@ -1,0 +1,46 @@
+#üst {
+  background-color: rgb(5, 166, 5);
+}
+body {
+  background-color: whitesmoke;
+}
+table {
+  width: 80% !important;
+  text-align: center;
+}
+th,
+td {
+  text-align: center;
+}
+thead {
+  background-color: black;
+  color: rgb(206, 1, 1);
+}
+#logo {
+  text-align: left !important;
+}
+#küme {
+  background-color: red;
+}
+#play-off {
+  background-color: rgb(0, 100, 244);
+}
+#samsun {
+  background-color: rgb(187, 187, 187);
+}
+#galibiyet {
+  background-color: rgb(0, 193, 0);
+}
+#beraberlik {
+  background-color: rgb(255, 166, 0);
+}
+#mağlubiyet {
+  background-color: red;
+}
+#detay {
+  color: black;
+}
+#detay:hover {
+  transition: 0.5s;
+  color: brown;
+}

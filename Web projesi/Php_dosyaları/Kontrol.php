@@ -24,7 +24,7 @@ if($db_email == $email and $db_password == $password){
 echo "Giriş Başarılı Şekilde Yapıldı.";
 include("session.php");
 } else { echo "Kullanıcı adı veya parola yanlış.";
-header("location:login.html");
+header("location:login.php");
 }
  
 } else {

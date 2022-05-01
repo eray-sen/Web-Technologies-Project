@@ -1,4 +1,5 @@
 <?php include"Kontrol.php";
+header("Location: Kontrol.php/");
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -119,7 +120,7 @@ body {
           <div class="card-body">
             <h2 class="title tex-center mt-4">Hoş Geldiniz</h2>
 
-            <form action=<?php echo htmlspecialchars("Kontrol.php") ?> method="POST" class="form-box px-3"> 
+            <form action=Kontrol.php method="POST" class="form-box px-3"> 
               <div class="form-input">
                 <span><i class="fa-solid fa-envelope"></i></span>
                 <input
@@ -157,10 +158,10 @@ body {
       </div>
     </div>
 
-    <!-- <script
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
-    ></script> -->
+    ></script> 
   </body>
 </html>
