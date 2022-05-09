@@ -1,5 +1,4 @@
-<?php include"Kontrol.php";
-header("Location: Kontrol.php/");
+<?php
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,6 +33,9 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+.btn1{
+    background-color: lightblue;
 }
 .card {
   overflow: hidden;
@@ -84,7 +86,7 @@ body {
   border: 2px solid;
 }
 .form-input input:focus::placeholder {
-  color: #454b69;
+  color:red;
 }
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
   background-color: #002fff !important;
@@ -120,7 +122,7 @@ body {
           <div class="card-body">
             <h2 class="title tex-center mt-4">Hoş Geldiniz</h2>
 
-            <form action=Kontrol.php method="POST" class="form-box px-3"> 
+            <form action=Control.php method="POST" class="form-box px-3"> 
               <div class="form-input">
                 <span><i class="fa-solid fa-envelope"></i></span>
                 <input
@@ -153,11 +155,24 @@ body {
                 </button>
               </div>
             </form>
-          </div>
+            <!-- <div class="mb-3"></div>
+              <div class="d-flex justify-content-center">
+                  
+                <button
+                
+                  type="submit"
+                  class="btn1 btn-block text-uppercase"
+                  name="btn"
+                >
+                <a href="file:///Users/eraysen/Desktop/Web%20projesi/Html_dosyalar%C4%B1/Hakkimda.html">Ana Sayfaya Dön</a>
+                  
+                </button>
+              </div>
+
+          </div> -->
         </div>
       </div>
     </div>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
