@@ -1,23 +1,71 @@
 const options = {
-    method: "GET",
-    headers: {
-      "X-RapidAPI-Host": "football-web-pages1.p.rapidapi.com",
-      "X-RapidAPI-Key":
-        "02f3d604d5mshcdd2e4be9aaebe2p179ed8jsndcd978787617",
-    },
-  };
+  method: "GET",
+  headers: {
+    "X-RapidAPI-Host": "online-movie-database.p.rapidapi.com",
+    "X-RapidAPI-Key": "02f3d604d5mshcdd2e4be9aaebe2p179ed8jsndcd978787617",
+  },
+};
 
-  fetch(
-    "https://football-web-pages1.p.rapidapi.com/league-table.json?comp=1&team=1",
-    options
-  )
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (teams) {
-      let output = "<ul>";
-      teams.foreach(function (team) {
-        output += `<li> Teams: $(teams) <li>`;
-      });
-      document.getElementById("box").innerHTML += output;
+fetch(
+  "https://online-movie-database.p.rapidapi.com/auto-complete?q=europe",
+  options
+)
+  .then((response) => response.json())
+  .then((data) => {
+    const list = data.d;
+    list.map((item) => {
+      const name = item.l;
+      const poster = item.i.imageUrl;
+      const movie =
+        '<li><img src="' + poster + '"> <h2>"' + name + '"</h2></li>';
+      document.querySelector(".movies").innerHTML += movie;
     });
+  });
+
+// const options = {
+//   method: "GET",
+//   headers: {
+//     "X-RapidAPI-Host": "online-movie-database.p.rapidapi.com",
+//     "X-RapidAPI-Key": "02f3d604d5mshcdd2e4be9aaebe2p179ed8jsndcd978787617",
+//   },
+// };
+
+// fetch(
+//   "https://online-movie-database.p.rapidapi.com/auto-complete?q=football",
+//   options
+// )
+//   .then((response) => response.json())
+//   .then((response) => console.log(response))
+//   .catch((err) => console.error(err));
+
+// const options = {
+//   method: "GET",
+//   headers: {
+//     "X-RapidAPI-Host": "online-movie-database.p.rapidapi.com",
+//     "X-RapidAPI-Key": "02f3d604d5mshcdd2e4be9aaebe2p179ed8jsndcd978787617",
+//   },
+// };
+
+// fetch(
+//   "https://online-movie-database.p.rapidapi.com/auto-complete?q=game%20",
+//   options
+// )
+//   .then((response) => response.json())
+//   .then((response) => console.log(response))
+//   .catch((err) => console.error(err));
+
+// const options = {
+//   method: "GET",
+//   headers: {
+//     "X-RapidAPI-Host": "online-movie-database.p.rapidapi.com",
+//     "X-RapidAPI-Key": "02f3d604d5mshcdd2e4be9aaebe2p179ed8jsndcd978787617",
+//   },
+// };
+
+// fetch(
+//   "https://online-movie-database.p.rapidapi.com/auto-complete?q=basketball",
+//   options
+// )
+//   .then((response) => response.json())
+//   .then((response) => console.log(response))
+//   .catch((err) => console.error(err));

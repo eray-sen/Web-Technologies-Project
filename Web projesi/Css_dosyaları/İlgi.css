@@ -1,16 +1,32 @@
-.box {
-  width: 70%;
-  height: auto;
-  position: absolute;
-  top: 10%;
-  left: 10%;
-}
-
-.content {
-  background-color: red;
-  height: auto;
-  border-radius: 10px 0 10px 0;
-}
 body {
   background-color: whitesmoke;
+}
+.movies {
+  margin-top: 5%;
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.movies li {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.movies li img {
+  max-width: 250px;
+  border-radius: 12px;
+}
+h1 {
+  color: darkred;
+  text-align: center;
+  margin-top: 3%;
+  text-decoration: underline;
+}
+h1,
+h2 {
+  font-family: Ubuntu;
+  font-style: oblique;
 }

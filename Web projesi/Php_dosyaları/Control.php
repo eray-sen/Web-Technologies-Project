@@ -14,8 +14,6 @@ if($email and $password){
     }
     else{
         echo("<h2> Bu bilgilere sahip bir kullanıcı bulunamadı. Bilgilerinizi kontrol ediniz.");
-        comeBack(3);
-      
     }
     
 }
