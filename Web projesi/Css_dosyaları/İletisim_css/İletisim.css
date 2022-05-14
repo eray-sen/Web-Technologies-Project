@@ -70,3 +70,8 @@ body {
   margin-top: -12%;
   margin-left: 20%;
 }
+@media screen and (max-width: 800px) {
+  #temizle {
+    margin: 0;
+  }
+}
