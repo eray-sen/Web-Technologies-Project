@@ -68,6 +68,9 @@ body {
   margin-left: 52%;
   margin-top: -30%;
 }
+#samsunspor img {
+  width: 30px !important;
+}
 
 @media screen and (max-width: 1200px) {
   p {

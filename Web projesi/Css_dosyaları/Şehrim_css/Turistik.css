@@ -62,11 +62,19 @@ p {
   border: 1px solid black;
   margin-top: 3%;
 }
+#samsunspor img {
+  width: 30px !important;
+}
 
 @media screen and (max-width: 768px) {
   p {
     width: 60%;
     margin-left: 20%;
+  }
+  #tekli {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: -5%;
   }
   .cerceve {
     margin-top: 3%;

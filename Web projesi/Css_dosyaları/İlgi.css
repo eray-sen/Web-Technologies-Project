@@ -1,0 +1,32 @@
+body {
+  background-color: whitesmoke;
+}
+.movies {
+  margin-top: 5%;
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.movies li {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.movies li img {
+  max-width: 250px;
+  border-radius: 12px;
+}
+h2 {
+  color: darkred;
+  text-align: center !important;
+  margin-top: 3%;
+  text-decoration: underline;
+  font-family: Ubuntu;
+  font-style: oblique;
+}
+h3 {
+  color: black !important;
+}

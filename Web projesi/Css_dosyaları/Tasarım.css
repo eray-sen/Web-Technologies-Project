@@ -21,7 +21,6 @@ h3 {
   font-size: 175%;
   color: rgba(182, 10, 10, 0.915);
   margin-top: 5%;
-  margin-left: 18%;
 }
 h4 {
   font-family: Ubuntu;
@@ -48,5 +47,5 @@ p {
   border-width: 1px;
 }
 #samsunspor img {
-  height: 30px;
+  height: 30px !important;
 }

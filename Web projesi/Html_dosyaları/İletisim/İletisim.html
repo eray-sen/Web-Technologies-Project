@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../../Css_dosyaları/navbar.css" />
+    <link rel="stylesheet" href="../../Css_dosyaları/İletisim_css/İletisim.css" />
+    <link rel="stylesheet" href="../../Css_dosyaları/Tasarım.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <script src="../../JavaScript_dosyaları/Control.js"></script>
+    <title>İletisim</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="navbar bg-dark navbar-dark navbar-expand-sm">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mobile"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="mobile" class="collapse navbar-collapse">
+            <ul id="navbar" class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a href="../Hakkimda.html" class="nav-link"
+                  ><i class="fas fa-user"></i>Hakkımda</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="../Egitim.html" class="nav-link"
+                  ><i class="fa-solid fa-graduation-cap"></i>Eğitim Bilgilerim</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link" id="active"
+                  ><i class="fa-solid fa-city"></i>Şehrim <i class="fa-solid fa-caret-down"></i></a
+                >
+                <ul>
+                    <li>
+                      <a href="../Bilgiler.html" id="active"> Bilgiler </a>
+                    </li>
+          
+                    <li>
+                      <a href="#">
+                        Gezilecek Yerler <i class="fa-solid fa-caret-down"></i
+                      ></a>
+                      <ul>
+                        <li>
+                          <a href="../Müzeler.html">Müzeler</a>
+                        </li>
+                        <li>
+                          <a href="../Turistik.html"
+                            >Turistik Yerler</a
+                          >
+                        </li>
+                        <li>
+                          <a href="../Doğal.html">Doğal Güzellikler</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link" id="samsunspor">
+                  <img  src="../../Resimler/Mirasımız/samsun.png"> 
+                  Mirasımız <i class="fa-solid fa-caret-down"></i></a
+                >
+                <ul id="dropdown">
+                  <li>
+                    <a id="miras" href="#"> Kulüp <i class="fa-solid fa-caret-down"></i></a>
+                    <ul>
+                      <li>
+                        <a href="../Mirasımız/Tarihçe.html">
+                          Tarihçe 
+                        </a>
+                      </li>
+                      <p id="çizgi"></p>
+                      <li>
+                      <a href="../Mirasımız/Başkanlar.html">
+                       Başkanlar 
+                      </a>
+                      </li>
+                      <p id="çizgi"></p>
+                      <li>
+                        <a href="../Mirasımız/Tesis.html">
+                          Nuri Asan Tesisi 
+                        </a>
+                        </li>
+                        <p id="çizgi"></p>
+                        <li>
+                          <a href="../Mirasımız/Stadyum.html">
+                            19 Mayıs Stadyumu
+                          </a>
+                          </li>
+                      </ul>
+                   </li>
+
+                  <li>
+                    <a id="miras" href="#"> Takım <i class="fa-solid fa-caret-down"></i></a>
+                    <ul>
+                      <a href="../Mirasımız/Kadro.html">
+                        Takım Kadrosu 
+                      </a>
+                    </li>
+                      <p id="çizgi"></p>
+                        <li>
+                          <a href="../Mirasımız/Fikstür.html">
+                            Fikstür ve Puan Durumu 
+                          </a>
+                      </li>
+                    </ul>
+                  </li>
+                    
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="../İlgi.html" class="nav-link"
+                  ><i class="fa-solid fa-clapperboard"></i>İlgi Alanlarım</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"
+                  ><i class="fa-solid fa-phone"></i>İletişim</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex">
+              <a
+                class="btn btn-primary"
+                href="http://eray-macbook-air.local/dashboard/login.php"
+                >Login</a
+              >
+            </form>
+          </div>
+        </div>
+    <section class="mb-4">
+     
+      <h2 class="h1-responsive font-weight-bold text-center my-4">
+        Benimle İletişime Geçin
+      </h2>
+    
+      <p class="text-center w-responsive mx-auto mb-5">
+        Benimle iletişime geçmek isterseniz form, mail, telefon veya sosyal medya hesapları üzerinden bana ulaşabilirsiniz.
+      </p>
+
+      <div class="row">
+        <div class="info col-md-9 mb-md-0 mb-5">
+          <form onsubmit="ControlForm()" id="contact-form" name="contact-form" action="Mail.php" method="POST">
+            
+            <div class="row mt-3 ms-3">
+                <label for="name" class="">Adınız ve Soy Adınız</label>
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input
+                    type="text"
+                    placeholder="Full Name"
+                    autocomplete="off"
+                    id="name"
+                    name="name"
+                    class="form-control"
+                    
+                  />              
+                </div>
+              </div>
+            <div class="info mt-3">
+                <label for="email" class="">E-mail</label>
+                <div class="col-md-6">          
+                    <div class="md-form mb-0">
+                    <input
+                        type="text"
+                        placeholder="E-mail Adress"
+                        autocomplete="off"
+                        id="email"
+                        name="email"
+                        class="form-control"
+                                        />
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="row mt-4 ms-3">
+                <label for="message">Mesajınız</label> 
+              <div class="col-md-12">
+                <div class="md-form">
+                  <textarea
+                    type="text"
+                    placeholder="Your message"
+                    autocomplete="off"
+                    id="message"
+                    name="message"
+                    rows="3"
+                    class="form-control md-textarea"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <div class="text-center text-md-left mt-4">
+            <a
+          
+            id="gonder"
+              class="btn btn-primary"
+              onclick="ControlForm();"
+              >Gönder</a
+            >
+          </div>
+          <div class="text-center text-md-left mt-4">
+            <a
+              id="temizle"
+              class="btn btn-success"
+              onclick="Clear();"
+              >Temizle</a
+            >
+          </div>
+          <div class="status"></div>
+        </div>
+     
+        <div class="col-md-3 text-center mt-4">
+          <ul class="list-unstyled mb-0">
+            <li>
+              <i class="fas fa-map-marker-alt fa-2x"></i>
+              <p>Istanbul/Turkey</p>
+            </li>
+
+            <li>
+              <i class="fas fa-phone mt-4 fa-2x"></i>
+              <p>+905350184386</p>
+            </li>
+
+            <li>
+              <i class="fas fa-envelope mt-4 fa-2x"></i>
+              <p>erraysen3@gmail.com</p>
+            </li>
+          </ul>
+        </div>
+    <div class="text-center text-md-left mt-4">
+        <h5>Sosyal Medya Hesaplarım</h5>
+        <div class="list-inline banner-social-buttons"> 
+          <a class="yazı" href="#!" role="button"
+            ><i id="insta" class="fab fa-instagram fa-lg"></i
+          > Instagram</a> 
+          <a class="yazı" href="#!" role="button"
+            ><i id="twitter" class="fab fa-twitter fa-lg"></i
+          > Twitter </a>
+          
+        </div> 
+    </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+body {
+  background-color: whitesmoke;
+}
+table {
+  width: 80% !important;
+  text-align: center;
+}
+th,
+td {
+  text-align: center;
+}
+thead {
+  background-color: black;
+  color: rgb(183, 0, 0);
+}
