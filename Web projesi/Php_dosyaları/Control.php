@@ -10,10 +10,11 @@ if($email and $password){
     if($email==$Data_email && $password==$Data_password)
     {
         echo("<h2> Hoş Geldiniz  $email " );
-
+        header("Refresh: 3; url=http://erraysen.epizy.com/Web%20projesi/Html_dosyaları/Hakkimda.html");
     }
     else{
         echo("<h2> Bu bilgilere sahip bir kullanıcı bulunamadı. Bilgilerinizi kontrol ediniz.");
+        header("Refresh: 3; url=http://eray-macbook-air.local/dashboard/login.php");
     }
     
 }

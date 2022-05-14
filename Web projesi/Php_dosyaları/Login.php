@@ -155,21 +155,6 @@ body {
                 </button>
               </div>
             </form>
-            <!-- <div class="mb-3"></div>
-              <div class="d-flex justify-content-center">
-                  
-                <button
-                
-                  type="submit"
-                  class="btn1 btn-block text-uppercase"
-                  name="btn"
-                >
-                <a href="file:///Users/eraysen/Desktop/Web%20projesi/Html_dosyalar%C4%B1/Hakkimda.html">Ana Sayfaya Dön</a>
-                  
-                </button>
-              </div>
-
-          </div> -->
         </div>
       </div>
     </div>
